@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>undefined</title>
+            <style>html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+html { text-size-adjust: 100%; }
+body { margin: 0px; }
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary { display: block; }
+audio, canvas, progress, video { display: inline-block; }
+progress { vertical-align: baseline; }
+audio:not([controls]) { display: none; height: 0px; }
+[hidden], template { display: none; }
+a { background-color: transparent; }
+a:active, a:hover { outline-width: 0px; }
+abbr[title] { border-bottom: none; text-decoration: underline; }
+dfn { font-style: italic; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+figure { margin: 1em 40px; }
+img { border-style: none; }
+svg:not(:root) { overflow: hidden; }
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+hr { box-sizing: content-box; height: 0px; overflow: visible; }
+button, input, select, textarea { font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; margin: 0px; }
+optgroup { font-weight: bold; }
+button, input { overflow: visible; }
+button, select { text-transform: none; }
+button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+fieldset { border: 1px solid rgb(192, 192, 192); margin: 0px 2px; padding: 0.35em 0.625em 0.75em; }
+legend { color: inherit; display: table; max-width: 100%; padding: 0px; white-space: normal; }
+textarea { overflow: auto; }
+[type="checkbox"], [type="radio"] { padding: 0px; }
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+[type="search"] { -webkit-appearance: textfield; outline-offset: -2px; }
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+::-webkit-input-placeholder { color: inherit; opacity: 0.54; }
+::-webkit-file-upload-button { -webkit-appearance: button; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+html, body { font-family: Verdana, sans-serif; font-size: 15px; line-height: 1.5; }
+html { overflow-x: hidden; }
+h1, h2, h3, h4, h5, h6, .w3-slim, .w3-wide { font-family: "Segoe UI", Arial, sans-serif; }
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+.w3-serif { font-family: "Times New Roman", Times, serif; }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; margin: 10px 0px; }
+.w3-wide { letter-spacing: 4px; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+hr { border-width: 1px 0px 0px; border-right-style: initial; border-bottom-style: initial; border-left-style: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image: initial; border-top-style: solid; border-top-color: rgb(238, 238, 238); margin: 20px 0px; }
+img { margin-bottom: -5px; }
+a { color: inherit; }
+.w3-image { max-width: 100%; height: auto; }
+.w3-table, .w3-table-all { border-collapse: collapse; border-spacing: 0px; width: 100%; display: table; }
+.w3-table-all { border: 1px solid rgb(204, 204, 204); }
+.w3-bordered tr, .w3-table-all tr { border-bottom: 1px solid rgb(221, 221, 221); }
+.w3-striped tbody tr:nth-child(2n) { background-color: rgb(241, 241, 241); }
+.w3-table-all tr:nth-child(2n+1) { background-color: rgb(255, 255, 255); }
+.w3-table-all tr:nth-child(2n) { background-color: rgb(241, 241, 241); }
+.w3-hoverable tbody tr:hover, .w3-ul.w3-hoverable li:hover { background-color: rgb(204, 204, 204); }
+.w3-centered tr th, .w3-centered tr td { text-align: center; }
+.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th { padding: 8px; display: table-cell; text-align: left; vertical-align: top; }
+.w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child { padding-left: 16px; }
+.w3-btn, .w3-btn-block, .w3-button { border: none; display: inline-block; outline: 0px; padding: 6px 16px; vertical-align: middle; overflow: hidden; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); text-align: center; cursor: pointer; white-space: nowrap; text-decoration: none !important; }
+.w3-btn:hover, .w3-btn-block:hover, .w3-btn-floating:hover, .w3-btn-floating-large:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px, rgba(0, 0, 0, 0.188235) 0px 6px 20px 0px; }
+.w3-button { color: rgb(0, 0, 0); background-color: rgb(241, 241, 241); padding: 8px 16px; }
+.w3-button:hover { color: rgb(0, 0, 0) !important; background-color: rgb(204, 204, 204) !important; }
+.w3-btn, .w3-btn-floating, .w3-btn-floating-large, .w3-closenav, .w3-opennav, .w3-btn-block, .w3-button { user-select: none; }
+.w3-btn-floating, .w3-btn-floating-large { display: inline-block; text-align: center; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); position: relative; overflow: hidden; z-index: 1; padding: 0px; border-radius: 50%; cursor: pointer; font-size: 24px; }
+.w3-btn-floating { width: 40px; height: 40px; line-height: 40px; }
+.w3-btn-floating-large { width: 56px; height: 56px; line-height: 56px; }
+.w3-disabled, .w3-btn:disabled, .w3-button:disabled, .w3-btn-floating:disabled, .w3-btn-floating-large:disabled { cursor: not-allowed; opacity: 0.3; }
+.w3-disabled *, :disabled * { pointer-events: none; }
+.w3-btn.w3-disabled:hover, .w3-btn-block.w3-disabled:hover, .w3-btn:disabled:hover, .w3-btn-floating.w3-disabled:hover, .w3-btn-floating:disabled:hover, .w3-btn-floating-large.w3-disabled:hover, .w3-btn-floating-large:disabled:hover { box-shadow: none; }
+.w3-btn-group .w3-btn { float: left; }
+.w3-btn-block { width: 100%; }
+.w3-btn-bar .w3-btn { box-shadow: none; background-color: inherit; color: inherit; float: left; }
+.w3-btn-bar .w3-btn:hover { background-color: rgb(204, 204, 204); }
+.w3-badge, .w3-tag, .w3-sign { background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); display: inline-block; padding-left: 8px; padding-right: 8px; text-align: center; }
+.w3-badge { border-radius: 50%; }
+ul.w3-ul { list-style-type: none; padding: 0px; margin: 0px; }
+ul.w3-ul li { padding: 8px 16px; border-bottom: 1px solid rgb(221, 221, 221); }
+ul.w3-ul li:last-child { border-bottom: none; }
+.w3-tooltip, .w3-display-container { position: relative; }
+.w3-tooltip .w3-text { display: none; }
+.w3-tooltip:hover .w3-text { display: inline-block; }
+.w3-navbar { list-style-type: none; margin: 0px; padding: 0px; overflow: hidden; }
+.w3-navbar li { float: left; }
+.w3-navbar li a, .w3-navitem, .w3-navbar li .w3-btn, .w3-navbar li .w3-input { display: block; padding: 8px 16px; }
+.w3-navbar li .w3-btn, .w3-navbar li .w3-input { border: none; outline: none; width: 100%; }
+.w3-navbar li a:hover { color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); }
+.w3-navbar .w3-dropdown-hover, .w3-navbar .w3-dropdown-click { position: static; }
+.w3-navbar .w3-dropdown-hover:hover, .w3-navbar .w3-dropdown-hover:first-child, .w3-navbar .w3-dropdown-click:hover { background-color: rgb(204, 204, 204); color: rgb(0, 0, 0); }
+.w3-navbar a, .w3-topnav a, .w3-sidenav a, .w3-dropdown-content a, .w3-accordion-content a, .w3-dropnav a, .w3-navblock a { text-decoration: none !important; }
+.w3-navbar .w3-opennav.w3-right { float: right !important; }
+.w3-topnav { padding: 8px; }
+.w3-navblock .w3-dropdown-hover:hover, .w3-navblock .w3-dropdown-hover:first-child, .w3-navblock .w3-dropdown-click:hover { background-color: rgb(204, 204, 204); color: rgb(0, 0, 0); }
+.w3-navblock .w3-dropdown-hover, .w3-navblock .w3-dropdown-click { width: 100%; }
+.w3-navblock .w3-dropdown-hover .w3-dropdown-content, .w3-navblock .w3-dropdown-click .w3-dropdown-content { min-width: 100%; }
+.w3-topnav a { padding: 0px 8px; border-bottom: 3px solid transparent; transition: border-bottom 0.25s; }
+.w3-topnav a:hover { border-bottom: 3px solid rgb(255, 255, 255); }
+.w3-topnav .w3-dropdown-hover a { border-bottom: 0px; }
+.w3-opennav, .w3-closenav { color: inherit; }
+.w3-opennav:hover, .w3-closenav:hover { cursor: pointer; opacity: 0.8; }
+.w3-btn, .w3-btn-floating, .w3-dropnav a, .w3-btn-floating-large, .w3-btn-block, .w3-navbar a, .w3-navblock a, .w3-sidenav a, .w3-pagination li a, .w3-hoverable tbody tr, .w3-hoverable li, .w3-accordion-content a, .w3-dropdown-content a, .w3-dropdown-click:hover, .w3-dropdown-hover:hover, .w3-opennav, .w3-closenav, .w3-closebtn, [class*="w3-hover-"] { transition: background-color 0.25s, color 0.15s, box-shadow 0.15s, opacity 0.25s, filter 0.25s, border 0.15s; }
+.w3-ripple:active { opacity: 0.5; }
+.w3-ripple { transition: opacity 0s; }
+.w3-sidenav, .w3-sidebar { height: 100%; width: 200px; background-color: rgb(255, 255, 255); z-index: 1; overflow: auto; position: fixed !important; }
+.w3-sidenav a, .w3-navblock a { padding: 4px 2px 4px 16px; }
+.w3-sidenav a:hover, .w3-navblock a:hover { background-color: rgb(204, 204, 204); color: rgb(0, 0, 0); }
+.w3-sidenav a, .w3-dropnav a, .w3-navblock a { display: block; }
+.w3-sidenav .w3-dropdown-hover:hover, .w3-sidenav .w3-dropdown-hover:first-child, .w3-sidenav .w3-dropdown-click:hover, .w3-dropnav a:hover { background-color: rgb(204, 204, 204); color: rgb(0, 0, 0); }
+.w3-sidenav .w3-dropdown-hover, .w3-sidenav .w3-dropdown-click, .w3-bar-block .w3-dropdown-hover, .w3-bar-block .w3-dropdown-click { width: 100%; }
+.w3-sidenav .w3-dropdown-hover .w3-dropdown-content, .w3-sidenav .w3-dropdown-click .w3-dropdown-content, .w3-bar-block .w3-dropdown-hover .w3-dropdown-content, .w3-bar-block .w3-dropdown-click .w3-dropdown-content { min-width: 100%; }
+.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-click .w3-button { width: 100%; text-align: left; background-color: inherit; color: inherit; padding: 8px 16px; }
+.w3-main, #main { transition: margin-left 0.4s; }
+.w3-modal { z-index: 3; display: none; padding-top: 100px; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.4); }
+.w3-modal-content { margin: auto; background-color: rgb(255, 255, 255); position: relative; padding: 0px; outline: 0px; width: 600px; }
+.w3-closebtn { text-decoration: none; float: right; font-size: 24px; font-weight: bold; color: inherit; }
+.w3-closebtn:hover, .w3-closebtn:focus { color: rgb(0, 0, 0); text-decoration: none; cursor: pointer; }
+.w3-pagination { display: inline-block; padding: 0px; margin: 0px; }
+.w3-pagination li { display: inline; }
+.w3-pagination li a { text-decoration: none; color: rgb(0, 0, 0); float: left; padding: 8px 16px; }
+.w3-pagination li a:hover { background-color: rgb(204, 204, 204); }
+.w3-input-group, .w3-group { margin-top: 24px; margin-bottom: 24px; }
+.w3-input { padding: 8px; display: block; border-top: none; border-right: none; border-left: none; border-image: initial; border-bottom: 1px solid rgb(128, 128, 128); width: 100%; }
+.w3-label { color: rgb(0, 150, 136); }
+.w3-input:not(:valid) ~ .w3-validate { color: rgb(244, 67, 54); }
+.w3-select { padding: 9px 0px; width: 100%; color: rgb(0, 0, 0); border-width: 1px; border-style: solid; border-color: transparent transparent rgb(0, 150, 136); border-image: initial; }
+.w3-select select:focus { color: rgb(0, 0, 0); border: 1px solid rgb(0, 150, 136); }
+.w3-select option[disabled] { color: rgb(0, 150, 136); }
+.w3-dropdown-click, .w3-dropdown-hover { position: relative; display: inline-block; cursor: pointer; }
+.w3-dropdown-hover:hover .w3-dropdown-content { display: block; z-index: 1; }
+.w3-dropdown-hover:first-child, .w3-dropdown-click:hover { background-color: rgb(204, 204, 204); color: rgb(0, 0, 0); }
+.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-click:hover > .w3-button:first-child { background-color: rgb(204, 204, 204); color: rgb(0, 0, 0); }
+.w3-dropdown-content { cursor: auto; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); display: none; position: absolute; min-width: 160px; margin: 0px; padding: 0px; }
+.w3-dropdown-content a { padding: 6px 16px; display: block; }
+.w3-dropdown-content a:hover { background-color: rgb(204, 204, 204); }
+.w3-accordion { width: 100%; cursor: pointer; }
+.w3-accordion-content { cursor: auto; display: none; position: relative; width: 100%; margin: 0px; padding: 0px; }
+.w3-accordion-content a { padding: 6px 16px; display: block; }
+.w3-accordion-content a:hover { background-color: rgb(204, 204, 204); }
+.w3-progress-container { width: 100%; height: 1.5em; position: relative; background-color: rgb(241, 241, 241); }
+.w3-progressbar { background-color: rgb(117, 117, 117); height: 100%; position: absolute; line-height: inherit; }
+input[type="checkbox"].w3-check, input[type="radio"].w3-radio { width: 24px; height: 24px; position: relative; top: 6px; }
+input[type="checkbox"].w3-check:checked + .w3-validate, input[type="radio"].w3-radio:checked + .w3-validate { color: rgb(0, 150, 136); }
+input[type="checkbox"].w3-check:disabled + .w3-validate, input[type="radio"].w3-radio:disabled + .w3-validate { color: rgb(170, 170, 170); }
+.w3-bar { width: 100%; overflow: hidden; }
+.w3-center .w3-bar { display: inline-block; width: auto; }
+.w3-bar .w3-bar-item { padding: 8px 16px; float: left; background-color: inherit; color: inherit; width: auto; border: none; outline: none; display: block; }
+.w3-bar .w3-dropdown-hover, .w3-bar .w3-dropdown-click { position: static; float: left; }
+.w3-bar .w3-button { background-color: inherit; color: inherit; white-space: normal; }
+.w3-bar-block .w3-bar-item { width: 100%; display: block; padding: 8px 16px; text-align: left; background-color: inherit; color: inherit; border: none; outline: none; white-space: normal; }
+.w3-bar-block.w3-center .w3-bar-item { text-align: center; }
+.w3-block { display: block; width: 100%; }
+.w3-responsive { overflow-x: auto; }
+.w3-container::after, .w3-container::before, .w3-panel::after, .w3-panel::before, .w3-row::after, .w3-row::before, .w3-row-padding::after, .w3-row-padding::before, .w3-cell-row::before, .w3-cell-row::after, .w3-topnav::after, .w3-topnav::before, .w3-clear::after, .w3-clear::before, .w3-btn-group::before, .w3-btn-group::after, .w3-btn-bar::before, .w3-btn-bar::after, .w3-bar::before, .w3-bar::after { content: ""; display: table; clear: both; }
+.w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter { float: left; width: 100%; }
+.w3-col.s1 { width: 8.33333%; }
+.w3-col.s2 { width: 16.6667%; }
+.w3-col.s3 { width: 25%; }
+.w3-col.s4 { width: 33.3333%; }
+.w3-col.s5 { width: 41.6667%; }
+.w3-col.s6 { width: 50%; }
+.w3-col.s7 { width: 58.3333%; }
+.w3-col.s8 { width: 66.6667%; }
+.w3-col.s9 { width: 75%; }
+.w3-col.s10 { width: 83.3333%; }
+.w3-col.s11 { width: 91.6667%; }
+.w3-col.s12, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter { width: 100%; }
+@media (min-width: 601px) {
+  .w3-col.m1 { width: 8.33333%; }
+  .w3-col.m2 { width: 16.6667%; }
+  .w3-col.m3, .w3-quarter { width: 25%; }
+  .w3-col.m4, .w3-third { width: 33.3333%; }
+  .w3-col.m5 { width: 41.6667%; }
+  .w3-col.m6, .w3-half { width: 50%; }
+  .w3-col.m7 { width: 58.3333%; }
+  .w3-col.m8, .w3-twothird { width: 66.6667%; }
+  .w3-col.m9, .w3-threequarter { width: 75%; }
+  .w3-col.m10 { width: 83.3333%; }
+  .w3-col.m11 { width: 91.6667%; }
+  .w3-col.m12 { width: 100%; }
+}
+@media (min-width: 993px) {
+  .w3-col.l1 { width: 8.33333%; }
+  .w3-col.l2 { width: 16.6667%; }
+  .w3-col.l3, .w3-quarter { width: 25%; }
+  .w3-col.l4, .w3-third { width: 33.3333%; }
+  .w3-col.l5 { width: 41.6667%; }
+  .w3-col.l6, .w3-half { width: 50%; }
+  .w3-col.l7 { width: 58.3333%; }
+  .w3-col.l8, .w3-twothird { width: 66.6667%; }
+  .w3-col.l9, .w3-threequarter { width: 75%; }
+  .w3-col.l10 { width: 83.3333%; }
+  .w3-col.l11 { width: 91.6667%; }
+  .w3-col.l12 { width: 100%; }
+}
+.w3-content { max-width: 980px; margin: auto; }
+.w3-rest { overflow: hidden; }
+.w3-layout-container, .w3-cell-row { display: table; width: 100%; }
+.w3-layout-row { display: table-row; }
+.w3-layout-cell, .w3-layout-col, .w3-cell { display: table-cell; }
+.w3-layout-top, .w3-cell-top { vertical-align: top; }
+.w3-layout-middle, .w3-cell-middle { vertical-align: middle; }
+.w3-layout-bottom, .w3-cell-bottom { vertical-align: bottom; }
+.w3-hide { display: none !important; }
+.w3-show-block, .w3-show { display: block !important; }
+.w3-show-inline-block { display: inline-block !important; }
+@media (max-width: 600px) {
+  .w3-modal-content { margin: 0px 10px; width: auto !important; }
+  .w3-modal { padding-top: 30px; }
+  .w3-topnav a { display: block; }
+  .w3-navbar li:not(.w3-opennav) { float: none; width: 100% !important; }
+  .w3-navbar li.w3-right { float: none !important; }
+  .w3-topnav .w3-dropdown-hover .w3-dropdown-content, .w3-navbar .w3-dropdown-click .w3-dropdown-content, .w3-navbar .w3-dropdown-hover .w3-dropdown-content, .w3-dropdown-hover.w3-mobile .w3-dropdown-content, .w3-dropdown-click.w3-mobile .w3-dropdown-content { position: relative; }
+  .w3-topnav, .w3-navbar { text-align: center; }
+  .w3-hide-small { display: none !important; }
+  .w3-layout-col, .w3-mobile { display: block; width: 100% !important; }
+  .w3-bar-item.w3-mobile, .w3-dropdown-hover.w3-mobile, .w3-dropdown-click.w3-mobile { text-align: center; }
+  .w3-dropdown-hover.w3-mobile, .w3-dropdown-hover.w3-mobile .w3-btn, .w3-dropdown-hover.w3-mobile .w3-button, .w3-dropdown-click.w3-mobile, .w3-dropdown-click.w3-mobile .w3-btn, .w3-dropdown-click.w3-mobile .w3-button { width: 100%; }
+}
+@media (max-width: 768px) {
+  .w3-modal-content { width: 500px; }
+  .w3-modal { padding-top: 50px; }
+}
+@media (min-width: 993px) {
+  .w3-modal-content { width: 900px; }
+  .w3-hide-large { display: none !important; }
+  .w3-sidenav.w3-collapse, .w3-sidebar.w3-collapse { display: block !important; }
+}
+@media (max-width: 992px) and (min-width: 601px) {
+  .w3-hide-medium { display: none !important; }
+}
+@media (max-width: 992px) {
+  .w3-sidenav.w3-collapse, .w3-sidebar.w3-collapse { display: none; }
+  .w3-main { margin-left: 0px !important; margin-right: 0px !important; }
+}
+.w3-top, .w3-bottom { position: fixed; width: 100%; z-index: 1; }
+.w3-top { top: 0px; }
+.w3-bottom { bottom: 0px; }
+.w3-overlay { position: fixed; display: none; width: 100%; height: 100%; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.498039); z-index: 2; }
+.w3-left { float: left !important; }
+.w3-right { float: right !important; }
+.w3-tiny { font-size: 10px !important; }
+.w3-small { font-size: 12px !important; }
+.w3-medium { font-size: 15px !important; }
+.w3-large { font-size: 18px !important; }
+.w3-xlarge { font-size: 24px !important; }
+.w3-xxlarge { font-size: 36px !important; }
+.w3-xxxlarge { font-size: 48px !important; }
+.w3-jumbo { font-size: 64px !important; }
+.w3-vertical { word-break: break-all; line-height: 1; text-align: center; width: 0.6em; }
+.w3-left-align { text-align: left !important; }
+.w3-right-align { text-align: right !important; }
+.w3-justify { text-align: justify !important; }
+.w3-center { text-align: center !important; }
+.w3-display-topleft { position: absolute; left: 0px; top: 0px; }
+.w3-display-topright { position: absolute; right: 0px; top: 0px; }
+.w3-display-bottomleft { position: absolute; left: 0px; bottom: 0px; }
+.w3-display-bottomright { position: absolute; right: 0px; bottom: 0px; }
+.w3-display-middle { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.w3-display-left { position: absolute; top: 50%; left: 0%; transform: translate(0%, -50%); }
+.w3-display-right { position: absolute; top: 50%; right: 0%; transform: translate(0%, -50%); }
+.w3-display-topmiddle { position: absolute; left: 50%; top: 0px; transform: translate(-50%, 0%); }
+.w3-display-bottommiddle { position: absolute; left: 50%; bottom: 0px; transform: translate(-50%, 0%); }
+.w3-display-container:hover .w3-display-hover { display: block; }
+.w3-display-container:hover span.w3-display-hover { display: inline-block; }
+.w3-display-hover { display: none; }
+.w3-display-position { position: absolute; }
+.w3-circle { border-radius: 50% !important; }
+.w3-round-small { border-radius: 2px !important; }
+.w3-round, .w3-round-medium { border-radius: 4px !important; }
+.w3-round-large { border-radius: 8px !important; }
+.w3-round-xlarge { border-radius: 16px !important; }
+.w3-round-xxlarge { border-radius: 32px !important; }
+.w3-round-jumbo { border-radius: 64px !important; }
+.w3-border-0 { border: 0px !important; }
+.w3-border { border: 1px solid rgb(204, 204, 204) !important; }
+.w3-border-top { border-top: 1px solid rgb(204, 204, 204) !important; }
+.w3-border-bottom { border-bottom: 1px solid rgb(204, 204, 204) !important; }
+.w3-border-left { border-left: 1px solid rgb(204, 204, 204) !important; }
+.w3-border-right { border-right: 1px solid rgb(204, 204, 204) !important; }
+.w3-margin { margin: 16px !important; }
+.w3-margin-0 { margin: 0px !important; }
+.w3-margin-top { margin-top: 16px !important; }
+.w3-margin-bottom { margin-bottom: 16px !important; }
+.w3-margin-left { margin-left: 16px !important; }
+.w3-margin-right { margin-right: 16px !important; }
+.w3-section { margin-top: 16px !important; margin-bottom: 16px !important; }
+.w3-padding-tiny { padding: 2px 4px !important; }
+.w3-padding-small { padding: 4px 8px !important; }
+.w3-padding-medium, .w3-padding, .w3-form { padding: 8px 16px !important; }
+.w3-padding-large { padding: 12px 24px !important; }
+.w3-padding-xlarge { padding: 16px 32px !important; }
+.w3-padding-xxlarge { padding: 24px 48px !important; }
+.w3-padding-jumbo { padding: 32px 64px !important; }
+.w3-padding-4 { padding-top: 4px !important; padding-bottom: 4px !important; }
+.w3-padding-8 { padding-top: 8px !important; padding-bottom: 8px !important; }
+.w3-padding-12 { padding-top: 12px !important; padding-bottom: 12px !important; }
+.w3-padding-16 { padding-top: 16px !important; padding-bottom: 16px !important; }
+.w3-padding-24 { padding-top: 24px !important; padding-bottom: 24px !important; }
+.w3-padding-32 { padding-top: 32px !important; padding-bottom: 32px !important; }
+.w3-padding-48 { padding-top: 48px !important; padding-bottom: 48px !important; }
+.w3-padding-64 { padding-top: 64px !important; padding-bottom: 64px !important; }
+.w3-padding-128 { padding-top: 128px !important; padding-bottom: 128px !important; }
+.w3-padding-0 { padding: 0px !important; }
+.w3-padding-top { padding-top: 8px !important; }
+.w3-padding-bottom { padding-bottom: 8px !important; }
+.w3-padding-left { padding-left: 16px !important; }
+.w3-padding-right { padding-right: 16px !important; }
+.w3-topbar { border-top: 6px solid rgb(204, 204, 204) !important; }
+.w3-bottombar { border-bottom: 6px solid rgb(204, 204, 204) !important; }
+.w3-leftbar { border-left: 6px solid rgb(204, 204, 204) !important; }
+.w3-rightbar { border-right: 6px solid rgb(204, 204, 204) !important; }
+.w3-row-padding, .w3-row-padding > .w3-half, .w3-row-padding > .w3-third, .w3-row-padding > .w3-twothird, .w3-row-padding > .w3-threequarter, .w3-row-padding > .w3-quarter, .w3-row-padding > .w3-col { padding: 0px 8px; }
+.w3-spin { animation: w3-spin 2s linear infinite; }
+@-webkit-keyframes w3-spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+@keyframes w3-spin { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+.w3-container { padding: 0.01em 16px; }
+.w3-panel { padding: 0.01em 16px; margin-top: 16px !important; margin-bottom: 16px !important; }
+.w3-example { background-color: rgb(241, 241, 241); padding: 0.01em 16px; }
+.w3-code, .w3-codespan { font-family: Consolas, "courier new"; font-size: 16px; }
+.w3-code { line-height: 1.4; width: auto; background-color: rgb(255, 255, 255); padding: 8px 12px; border-left: 4px solid rgb(76, 175, 80); word-wrap: break-word; }
+.w3-codespan { color: crimson; background-color: rgb(241, 241, 241); padding-left: 4px; padding-right: 4px; font-size: 110%; }
+.w3-example, .w3-code { margin: 20px 0px; }
+.w3-card, .w3-card-2, .w3-example { box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 4px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px !important; }
+.w3-card-4, .w3-hover-shadow:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.188235) 0px 6px 20px 0px !important; }
+.w3-card-8 { box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px, rgba(0, 0, 0, 0.188235) 0px 6px 20px 0px !important; }
+.w3-card-12 { box-shadow: rgba(0, 0, 0, 0.239216) 0px 12px 16px 0px, rgba(0, 0, 0, 0.188235) 0px 17px 50px 0px !important; }
+.w3-card-16 { box-shadow: rgba(0, 0, 0, 0.219608) 0px 16px 24px 0px, rgba(0, 0, 0, 0.207843) 0px 25px 55px 0px !important; }
+.w3-card-24 { box-shadow: rgba(0, 0, 0, 0.2) 0px 24px 24px 0px, rgba(0, 0, 0, 0.219608) 0px 40px 77px 0px !important; }
+.w3-animate-fading { animation: fading 10s infinite; }
+@-webkit-keyframes fading { 
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fading { 
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.w3-animate-opacity { animation: opac 0.8s; }
+@-webkit-keyframes opac { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes opac { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.w3-animate-top { position: relative; animation: animatetop 0.4s; }
+@-webkit-keyframes animatetop { 
+  0% { top: -300px; opacity: 0; }
+  100% { top: 0px; opacity: 1; }
+}
+@keyframes animatetop { 
+  0% { top: -300px; opacity: 0; }
+  100% { top: 0px; opacity: 1; }
+}
+.w3-animate-left { position: relative; animation: animateleft 0.4s; }
+@-webkit-keyframes animateleft { 
+  0% { left: -300px; opacity: 0; }
+  100% { left: 0px; opacity: 1; }
+}
+@keyframes animateleft { 
+  0% { left: -300px; opacity: 0; }
+  100% { left: 0px; opacity: 1; }
+}
+.w3-animate-right { position: relative; animation: animateright 0.4s; }
+@-webkit-keyframes animateright { 
+  0% { right: -300px; opacity: 0; }
+  100% { right: 0px; opacity: 1; }
+}
+@keyframes animateright { 
+  0% { right: -300px; opacity: 0; }
+  100% { right: 0px; opacity: 1; }
+}
+.w3-animate-bottom { position: relative; animation: animatebottom 0.4s; }
+@-webkit-keyframes animatebottom { 
+  0% { bottom: -300px; opacity: 0; }
+  100% { bottom: 0px; opacity: 1; }
+}
+@keyframes animatebottom { 
+  0% { bottom: -300px; opacity: 0; }
+  100% { bottom: 0px; opacity: 1; }
+}
+.w3-animate-zoom { animation: animatezoom 0.6s; }
+@-webkit-keyframes animatezoom { 
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes animatezoom { 
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+.w3-animate-input { transition: width 0.4s ease-in-out; }
+.w3-animate-input:focus { width: 100% !important; }
+.w3-opacity, .w3-hover-opacity:hover { opacity: 0.6; backface-visibility: hidden; }
+.w3-opacity-off, .w3-hover-opacity-off:hover { opacity: 1; backface-visibility: hidden; }
+.w3-opacity-max { opacity: 0.25; backface-visibility: hidden; }
+.w3-opacity-min { opacity: 0.75; backface-visibility: hidden; }
+.w3-greyscale-max, .w3-grayscale-max, .w3-hover-greyscale:hover, .w3-hover-grayscale:hover { filter: grayscale(100%); }
+.w3-greyscale, .w3-grayscale { filter: grayscale(75%); }
+.w3-greyscale-min, .w3-grayscale-min { filter: grayscale(50%); }
+.w3-sepia { filter: sepia(75%); }
+.w3-sepia-max, .w3-hover-sepia:hover { filter: sepia(100%); }
+.w3-sepia-min { filter: sepia(50%); }
+.w3-text-shadow { text-shadow: rgb(68, 68, 68) 1px 1px 0px; }
+.w3-text-shadow-white { text-shadow: rgb(221, 221, 221) 1px 1px 0px; }
+.w3-transparent { background-color: transparent !important; }
+.w3-hover-none:hover { box-shadow: none !important; background-color: transparent !important; }
+.w3-amber, .w3-hover-amber:hover { color: rgb(0, 0, 0) !important; background-color: rgb(255, 193, 7) !important; }
+.w3-aqua, .w3-hover-aqua:hover { color: rgb(0, 0, 0) !important; background-color: rgb(0, 255, 255) !important; }
+.w3-blue, .w3-hover-blue:hover { color: rgb(255, 255, 255) !important; background-color: rgb(33, 150, 243) !important; }
+.w3-light-blue, .w3-hover-light-blue:hover { color: rgb(0, 0, 0) !important; background-color: rgb(135, 206, 235) !important; }
+.w3-brown, .w3-hover-brown:hover { color: rgb(255, 255, 255) !important; background-color: rgb(121, 85, 72) !important; }
+.w3-cyan, .w3-hover-cyan:hover { color: rgb(0, 0, 0) !important; background-color: rgb(0, 188, 212) !important; }
+.w3-blue-grey, .w3-hover-blue-grey:hover, .w3-blue-gray, .w3-hover-blue-gray:hover { color: rgb(255, 255, 255) !important; background-color: rgb(96, 125, 139) !important; }
+.w3-green, .w3-hover-green:hover { color: rgb(255, 255, 255) !important; background-color: rgb(76, 175, 80) !important; }
+.w3-light-green, .w3-hover-light-green:hover { color: rgb(0, 0, 0) !important; background-color: rgb(139, 195, 74) !important; }
+.w3-indigo, .w3-hover-indigo:hover { color: rgb(255, 255, 255) !important; background-color: rgb(63, 81, 181) !important; }
+.w3-khaki, .w3-hover-khaki:hover { color: rgb(0, 0, 0) !important; background-color: rgb(240, 230, 140) !important; }
+.w3-lime, .w3-hover-lime:hover { color: rgb(0, 0, 0) !important; background-color: rgb(205, 220, 57) !important; }
+.w3-orange, .w3-hover-orange:hover { color: rgb(0, 0, 0) !important; background-color: rgb(255, 152, 0) !important; }
+.w3-deep-orange, .w3-hover-deep-orange:hover { color: rgb(255, 255, 255) !important; background-color: rgb(255, 87, 34) !important; }
+.w3-pink, .w3-hover-pink:hover { color: rgb(255, 255, 255) !important; background-color: rgb(233, 30, 99) !important; }
+.w3-purple, .w3-hover-purple:hover { color: rgb(255, 255, 255) !important; background-color: rgb(156, 39, 176) !important; }
+.w3-deep-purple, .w3-hover-deep-purple:hover { color: rgb(255, 255, 255) !important; background-color: rgb(103, 58, 183) !important; }
+.w3-red, .w3-hover-red:hover { color: rgb(255, 255, 255) !important; background-color: rgb(244, 67, 54) !important; }
+.w3-sand, .w3-hover-sand:hover { color: rgb(0, 0, 0) !important; background-color: rgb(253, 245, 230) !important; }
+.w3-teal, .w3-hover-teal:hover { color: rgb(255, 255, 255) !important; background-color: rgb(0, 150, 136) !important; }
+.w3-yellow, .w3-hover-yellow:hover { color: rgb(0, 0, 0) !important; background-color: rgb(255, 235, 59) !important; }
+.w3-white, .w3-hover-white:hover { color: rgb(0, 0, 0) !important; background-color: rgb(255, 255, 255) !important; }
+.w3-black, .w3-hover-black:hover { color: rgb(255, 255, 255) !important; background-color: rgb(0, 0, 0) !important; }
+.w3-grey, .w3-hover-grey:hover, .w3-gray, .w3-hover-gray:hover { color: rgb(0, 0, 0) !important; background-color: rgb(158, 158, 158) !important; }
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover { color: rgb(0, 0, 0) !important; background-color: rgb(241, 241, 241) !important; }
+.w3-dark-grey, .w3-hover-dark-grey:hover, .w3-dark-gray, .w3-hover-dark-gray:hover { color: rgb(255, 255, 255) !important; background-color: rgb(97, 97, 97) !important; }
+.w3-pale-red, .w3-hover-pale-red:hover { color: rgb(0, 0, 0) !important; background-color: rgb(255, 221, 221) !important; }
+.w3-pale-green, .w3-hover-pale-green:hover { color: rgb(0, 0, 0) !important; background-color: rgb(221, 255, 221) !important; }
+.w3-pale-yellow, .w3-hover-pale-yellow:hover { color: rgb(0, 0, 0) !important; background-color: rgb(255, 255, 204) !important; }
+.w3-pale-blue, .w3-hover-pale-blue:hover { color: rgb(0, 0, 0) !important; background-color: rgb(221, 255, 255) !important; }
+.w3-text-amber, .w3-hover-text-amber:hover { color: rgb(255, 193, 7) !important; }
+.w3-text-aqua, .w3-hover-text-aqua:hover { color: rgb(0, 255, 255) !important; }
+.w3-text-blue, .w3-hover-text-blue:hover { color: rgb(33, 150, 243) !important; }
+.w3-text-light-blue, .w3-hover-text-light-blue:hover { color: rgb(135, 206, 235) !important; }
+.w3-text-brown, .w3-hover-text-brown:hover { color: rgb(121, 85, 72) !important; }
+.w3-text-cyan, .w3-hover-text-cyan:hover { color: rgb(0, 188, 212) !important; }
+.w3-text-blue-grey, .w3-hover-text-blue-grey:hover, .w3-text-blue-gray, .w3-hover-text-blue-gray:hover { color: rgb(96, 125, 139) !important; }
+.w3-text-green, .w3-hover-text-green:hover { color: rgb(76, 175, 80) !important; }
+.w3-text-light-green, .w3-hover-text-light-green:hover { color: rgb(139, 195, 74) !important; }
+.w3-text-indigo, .w3-hover-text-indigo:hover { color: rgb(63, 81, 181) !important; }
+.w3-text-khaki, .w3-hover-text-khaki:hover { color: rgb(180, 170, 80) !important; }
+.w3-text-lime, .w3-hover-text-lime:hover { color: rgb(205, 220, 57) !important; }
+.w3-text-orange, .w3-hover-text-orange:hover { color: rgb(255, 152, 0) !important; }
+.w3-text-deep-orange, .w3-hover-text-deep-orange:hover { color: rgb(255, 87, 34) !important; }
+.w3-text-pink, .w3-hover-text-pink:hover { color: rgb(233, 30, 99) !important; }
+.w3-text-purple, .w3-hover-text-purple:hover { color: rgb(156, 39, 176) !important; }
+.w3-text-deep-purple, .w3-hover-text-deep-purple:hover { color: rgb(103, 58, 183) !important; }
+.w3-text-red, .w3-hover-text-red:hover { color: rgb(244, 67, 54) !important; }
+.w3-text-sand, .w3-hover-text-sand:hover { color: rgb(253, 245, 230) !important; }
+.w3-text-teal, .w3-hover-text-teal:hover { color: rgb(0, 150, 136) !important; }
+.w3-text-yellow, .w3-hover-text-yellow:hover { color: rgb(210, 190, 14) !important; }
+.w3-text-white, .w3-hover-text-white:hover { color: rgb(255, 255, 255) !important; }
+.w3-text-black, .w3-hover-text-black:hover { color: rgb(0, 0, 0) !important; }
+.w3-text-grey, .w3-hover-text-grey:hover, .w3-text-gray, .w3-hover-text-gray:hover { color: rgb(117, 117, 117) !important; }
+.w3-text-light-grey, .w3-hover-text-light-grey:hover, .w3-text-light-gray, .w3-hover-text-light-gray:hover { color: rgb(241, 241, 241) !important; }
+.w3-text-dark-grey, .w3-hover-text-dark-grey:hover, .w3-text-dark-gray, .w3-hover-text-dark-gray:hover { color: rgb(58, 58, 58) !important; }
+.w3-border-amber, .w3-hover-border-amber:hover { border-color: rgb(255, 193, 7) !important; }
+.w3-border-aqua, .w3-hover-border-aqua:hover { border-color: rgb(0, 255, 255) !important; }
+.w3-border-blue, .w3-hover-border-blue:hover { border-color: rgb(33, 150, 243) !important; }
+.w3-border-light-blue, .w3-hover-border-light-blue:hover { border-color: rgb(135, 206, 235) !important; }
+.w3-border-brown, .w3-hover-border-brown:hover { border-color: rgb(121, 85, 72) !important; }
+.w3-border-cyan, .w3-hover-border-cyan:hover { border-color: rgb(0, 188, 212) !important; }
+.w3-border-blue-grey, .w3-hover-border-blue-grey:hover, .w3-border-blue-gray, .w3-hover-border-blue-gray:hover { border-color: rgb(96, 125, 139) !important; }
+.w3-border-green, .w3-hover-border-green:hover { border-color: rgb(76, 175, 80) !important; }
+.w3-border-light-green, .w3-hover-border-light-green:hover { border-color: rgb(139, 195, 74) !important; }
+.w3-border-indigo, .w3-hover-border-indigo:hover { border-color: rgb(63, 81, 181) !important; }
+.w3-border-khaki, .w3-hover-border-khaki:hover { border-color: rgb(240, 230, 140) !important; }
+.w3-border-lime, .w3-hover-border-lime:hover { border-color: rgb(205, 220, 57) !important; }
+.w3-border-orange, .w3-hover-border-orange:hover { border-color: rgb(255, 152, 0) !important; }
+.w3-border-deep-orange, .w3-hover-border-deep-orange:hover { border-color: rgb(255, 87, 34) !important; }
+.w3-border-pink, .w3-hover-border-pink:hover { border-color: rgb(233, 30, 99) !important; }
+.w3-border-purple, .w3-hover-border-purple:hover { border-color: rgb(156, 39, 176) !important; }
+.w3-border-deep-purple, .w3-hover-border-deep-purple:hover { border-color: rgb(103, 58, 183) !important; }
+.w3-border-red, .w3-hover-border-red:hover { border-color: rgb(244, 67, 54) !important; }
+.w3-border-sand, .w3-hover-border-sand:hover { border-color: rgb(253, 245, 230) !important; }
+.w3-border-teal, .w3-hover-border-teal:hover { border-color: rgb(0, 150, 136) !important; }
+.w3-border-yellow, .w3-hover-border-yellow:hover { border-color: rgb(255, 235, 59) !important; }
+.w3-border-white, .w3-hover-border-white:hover { border-color: rgb(255, 255, 255) !important; }
+.w3-border-black, .w3-hover-border-black:hover { border-color: rgb(0, 0, 0) !important; }
+.w3-border-grey, .w3-hover-border-grey:hover, .w3-border-gray, .w3-hover-border-gray:hover { border-color: rgb(158, 158, 158) !important; }
+.w3-border-light-grey, .w3-hover-border-light-grey:hover, .w3-border-light-gray, .w3-hover-border-light-gray:hover { border-color: rgb(241, 241, 241) !important; }
+.w3-border-dark-grey, .w3-hover-border-dark-grey:hover, .w3-border-dark-gray, .w3-hover-border-dark-gray:hover { border-color: rgb(97, 97, 97) !important; }
+.w3-border-pale-red, .w3-hover-border-pale-red:hover { border-color: rgb(255, 231, 231) !important; }
+.w3-border-pale-green, .w3-hover-border-pale-green:hover { border-color: rgb(231, 255, 231) !important; }
+.w3-border-pale-yellow, .w3-hover-border-pale-yellow:hover { border-color: rgb(255, 255, 204) !important; }
+.w3-border-pale-blue, .w3-hover-border-pale-blue:hover { border-color: rgb(231, 255, 255) !important; }
+a:hover, a:active { color: rgb(76, 175, 80); }
+table.w3-table-all { margin: 20px 0px; }
+.top { position: relative; background-color: rgb(255, 255, 255); height: 68px; padding-top: 20px; line-height: 50px; overflow: hidden; z-index: 2; }
+.w3schools-logo { font-family: fontawesome; text-decoration: none; line-height: 1; -webkit-font-smoothing: antialiased; font-size: 37px; letter-spacing: 3px; color: rgb(85, 85, 85); display: block; position: absolute; top: 17px; }
+.w3schools-logo .dotcom { color: rgb(76, 175, 80); }
+.topnav { position: relative; z-index: 2; font-size: 17px; background-color: rgb(95, 95, 95); color: rgb(241, 241, 241); width: 100%; padding: 0px; letter-spacing: 1px; }
+.topnav a { display: inline-block; padding: 10px 15px 9px !important; }
+.topnav li a:hover { background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); }
+.topnav li a.active { background-color: rgb(76, 175, 80); color: rgb(255, 255, 255); }
+a.topnav-icons { width: 52px; font-size: 20px !important; padding-top: 11px !important; padding-bottom: 13px !important; }
+a.topnav-icons.fa-home { font-size: 22px !important; }
+a.topnav-localicons { font-size: 20px !important; padding-top: 6px !important; padding-bottom: 12px !important; }
+i.fa-caret-down, i.fa-caret-up { width: 10px; }
+#sidenav h2 { font-size: 21px; padding-left: 16px; margin: -4px 0px 4px; width: 204px; }
+#sidenav a { padding: 2px 1px 1px 16px; }
+#sidenav a:hover { color: rgb(0, 0, 0); }
+#sidenav a.active { background-color: rgb(76, 175, 80); color: rgb(255, 255, 255); }
+#sidenav .w3-closebtn { position: absolute; right: 16px; top: 0px; }
+#leftmenuinner { position: fixed; top: 0px; padding-top: 112px; padding-bottom: 0px; height: 100%; width: 220px; background-color: transparent; }
+#leftmenuinnerinner { height: 100%; width: 100%; overflow-y: scroll; overflow-x: hidden; padding-top: 20px; }
+#main { padding: 16px; }
+#mainLeaderboard { height: 90px; }
+#right { text-align: center; padding: 16px 16px 0px 0px; }
+#right a { text-decoration: none; }
+#right a:hover { text-decoration: underline; }
+#skyscraper { min-height: 600px; }
+.sidesection { margin-bottom: 32px; }
+.bottomad { padding: 0px 16px 16px 0px; float: left; width: auto; }
+.footer a { text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+#nav_tutorials, #nav_references, #nav_examples { overflow: auto; }
+#nav_tutorials::-webkit-scrollbar, #nav_references::-webkit-scrollbar, #nav_examples::-webkit-scrollbar { width: 12px; }
+#nav_tutorials::-webkit-scrollbar-track, #nav_references::-webkit-scrollbar-track, #nav_examples::-webkit-scrollbar-track { background: rgb(85, 85, 85); }
+#nav_tutorials::-webkit-scrollbar-thumb, #nav_references::-webkit-scrollbar-thumb, #nav_examples::-webkit-scrollbar-thumb { background: rgb(153, 153, 153); }
+.w3-dropnav { display: none; letter-spacing: 0px; margin-top: 44px; }
+.w3-dropnav .w3-closebtn { position: absolute; right: 0px; padding: 0px 16px 16px !important; }
+.w3-dropnav a { display: block; padding: 2px 0px !important; }
+.w3-dropnav a:hover { background-color: transparent; color: rgb(255, 255, 255); text-decoration: underline !important; }
+.nextprev a { font-size: 17px; border: 1px solid rgb(204, 204, 204); }
+.nextprev a:link, .nextprev a:visited { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); }
+.nextprev a.w3-right { background-color: rgb(76, 175, 80); color: rgb(255, 255, 255); border-color: rgb(76, 175, 80); }
+.w3-theme { color: rgb(255, 255, 255) !important; background-color: rgb(76, 175, 80) !important; }
+.w3-theme-border { border-color: rgb(76, 175, 80) !important; }
+.fa-facebook-square, .fa-twitter-square, .fa-google-plus-square { padding: 0px 8px; }
+.fa-facebook-square:hover, .fa-thumbs-o-up:hover { color: rgb(59, 89, 152); }
+.fa-twitter-square:hover { color: rgb(85, 172, 238); }
+.fa-google-plus-square:hover { color: rgb(221, 75, 57); }
+#google_translate_element img { margin-bottom: -1px; }
+#googleSearch { color: rgb(0, 0, 0); }
+#googleSearch a { padding: 0px !important; }
+.searchdiv { max-width: 400px; margin: auto; text-align: left; font-size: 16px; }
+div.cse .gsc-control-cse, div.gsc-control-cse { background-color: transparent; border: none; padding: 6px; margin: 0px; }
+td.gsc-search-button input.gsc-search-button { background-color: rgb(76, 175, 80); border-color: rgb(76, 175, 80); }
+td.gsc-search-button input.gsc-search-button:hover { background-color: rgb(70, 160, 73); }
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button { box-sizing: content-box; line-height: normal; }
+.gsc-tabsArea div { overflow: visible; }
+.w3-main { transition: margin-left 0s; }
+.w3-sidenav a { transition: background-color 0s; }
+@media screen and (max-width: 601px) {
+  .w3-navbar li a { display: inline-block; }
+  .w3-navbar li a:first-child { padding: 8px 16px; }
+  .w3-dropnav a { display: block; }
+}
+@media screen and (max-width: 600px) {
+  .w3-navbar { text-align: left; }
+  .w3-navbar li:not(.w3-opennav) { float: left; width: auto !important; }
+  .w3-navbar li.w3-right { float: right !important; }
+}
+@media (min-width: 1675px) {
+  #main { width: 79%; }
+  #right { width: 21%; }
+}
+@media (max-width: 992px) {
+  .top { height: 100px; }
+  .top img { display: block; margin: auto; }
+  .top .w3schools-logo { position: relative; top: 0px; width: 100%; text-align: center; margin: auto; }
+  .toptext { width: 100%; text-align: center; }
+  #sidenav { width: 260px; }
+  #sidenav h2 { font-size: 26px; width: 100%; }
+  #sidenav a { padding: 3px 2px 3px 24px; font-size: 17px; }
+  #leftmenuinner { box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 6px, rgba(0, 0, 0, 0.227451) 0px 3px 6px; overflow: auto; height: 100%; position: relative; width: auto; padding-top: 0px; background-color: rgb(241, 241, 241); }
+  #leftmenuinnerinner { overflow-y: scroll; }
+  .bottomad { float: none; text-align: center; }
+  #skyscraper { min-height: 60px; }
+}
+@media screen and (max-width: 600px) {
+  .top { height: 68px; }
+  .toptext { display: none; }
+}
+@font-face { font-family: fontawesome; src: url("../lib/fonts/fontawesome.eot?14663396#iefix") format("embedded-opentype"), url("../lib/fonts/fontawesome.woff?14663396") format("woff"), url("../lib/fonts/fontawesome.ttf?14663396") format("truetype"), url("../lib/fonts/fontawesome.svg?14663396#fontawesome") format("svg"); font-weight: normal; font-style: normal; }
+.fa { display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 1; font-family: FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; transform: translate(0px, 0px); }
+.fa-2x { font-size: 2em; }
+.fa-home::before { content: ""; }
+.fa-globe::before { content: ""; }
+.fa-search::before { content: ""; }
+.fa-thumbs-o-up::before { content: ""; }
+.fa-left-open::before { content: ""; }
+.fa-right-open::before { content: ""; }
+.fa-facebook-square::before { content: ""; }
+.fa-google-plus-square::before { content: ""; }
+.fa-twitter-square::before { content: ""; }
+.fa-caret-down::before { content: ""; }
+.fa-caret-up::before { content: ""; }
+span.marked, span.deprecated { color: rgb(232, 0, 0); background-color: transparent; }
+.intro { font-size: 16px; }
+.w3-btn, .w3-btn:link, .w3-btn:visited { color: rgb(255, 255, 255); background-color: rgb(76, 175, 80); }
+a.w3-btn[href*="exercise.asp"] { margin: 10px 5px 0px 0px; }
+a.btnplayit, a.btnplayit:link, a.btnplayit:visited { background-color: rgb(255, 173, 51); padding: 1px 10px 2px; }
+a.btnplayit:hover, a.btnplayit:active { background-color: rgb(255, 255, 255); color: rgb(255, 173, 51); }
+a.btnsmall:link, a.btnsmall:visited, a.btnsmall:active, a.btnsmall:hover { float: right; padding: 1px 10px 2px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Verdana, sans-serif; }
+a.btnsmall:active, a.btnsmall:hover { color: rgb(76, 175, 80); background-color: rgb(255, 255, 255); }
+@media screen and (max-width: 700px) {
+  #mainLeaderboard { height: 60px; }
+  #div-gpt-ad-1422003450156-0 { float: none; margin-left: auto; margin-right: auto; }
+  #div-gpt-ad-1422003450156-3 { float: none; margin-left: auto; margin-right: auto; }
+}
+@media (max-width: 1600px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(16) { display: none; }
+}
+@media (max-width: 1500px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(12) { display: none; }
+}
+@media (max-width: 1410px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(11) { display: none; }
+}
+@media (max-width: 1350px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(10) { display: none; }
+}
+@media (max-width: 1230px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(9) { display: none; }
+}
+@media (max-width: 1140px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(8) { display: none; }
+}
+@media (max-width: 1000px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(7) { display: none; }
+}
+@media (max-width: 992px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(6) { display: none; }
+}
+@media (max-width: 930px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(17) { display: none; }
+}
+@media (max-width: 800px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(18) { display: none; }
+}
+@media (max-width: 650px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(5) { display: none; }
+  #topnav ul:nth-of-type(1) li:nth-of-type(15) { display: none; }
+}
+@media (max-width: 460px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(4) { display: none; }
+}
+@media (max-width: 400px) {
+  #topnav ul:nth-of-type(1) li:nth-of-type(3) { display: none; }
+}
+@media (max-width: 320px) {
+  #topnav ul:nth-of-type(2) li:nth-of-type(1) { display: none; }
+}
+.w3-note { background-color: rgb(255, 255, 204); border-left: 6px solid rgb(255, 235, 59); }
+.w3-warning { background-color: rgb(255, 221, 221); border-left: 6px solid rgb(244, 67, 54); }
+.w3-info { background-color: rgb(221, 255, 221); border-left: 6px solid rgb(76, 175, 80); }
+table.browserref { border-collapse: collapse; width: 100%; }
+table.browserref tr:nth-child(2n) { background-color: rgb(241, 241, 241); }
+table.browserref tr:nth-child(2n+1) { background-color: rgb(255, 255, 255); }
+table.browserref tr.fixzebra { background-color: rgb(241, 241, 241); }
+table.browserref th { height: 32px; background-repeat: no-repeat; background-position: center center; border: 1px solid rgb(212, 212, 212); background-color: rgb(255, 255, 255); font-weight: normal; color: rgb(85, 85, 85); padding: 11px 5px; vertical-align: middle; }
+table.browserref td { border: 1px solid rgb(212, 212, 212); text-align: center; padding: 8px; vertical-align: top; }
+table.browserref th:first-child, table.browserref td:first-child { padding-left: 16px; }
+table.browserref .bsIE { background-image: url("/images/compatible_ie.gif"); }
+table.browserref .bsEdge { background-image: url("/images/compatible_edge.gif"); }
+table.browserref .bsFirefox { background-image: url("/images/compatible_firefox.gif"); }
+table.browserref .bsChrome { background-image: url("/images/compatible_chrome.gif"); }
+table.browserref .bsSafari { background-image: url("/images/compatible_safari.gif"); }
+table.browserref .bsOpera { background-image: url("/images/compatible_opera.gif"); }
+.gsc-control-cse { font-family: Arial, sans-serif; border-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255); }
+.gsc-control-cse .gsc-table-result { font-family: Arial, sans-serif; }
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus { border-color: rgb(217, 217, 217); }
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus { border-color: rgb(47, 91, 183); background-color: rgb(53, 122, 232); background-image: none; filter: none; }
+.gsc-tabHeader.gsc-tabhInactive { border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.gsc-tabHeader.gsc-tabhActive { border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(255, 255, 255); background-color: rgb(255, 255, 255); }
+.gsc-tabsArea { border-color: rgb(204, 204, 204); }
+.gsc-webResult.gsc-result, .gsc-results .gsc-imageResult { border-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255); }
+.gsc-webResult.gsc-result:hover, .gsc-imageResult:hover { border-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255); }
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b { color: rgb(17, 85, 204); }
+.gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b { color: rgb(17, 85, 204); }
+.gs-webResult.gs-result a.gs-title:hover, .gs-webResult.gs-result a.gs-title:hover b, .gs-imageResult a.gs-title:hover, .gs-imageResult a.gs-title:hover b { color: rgb(17, 85, 204); }
+.gs-webResult.gs-result a.gs-title:active, .gs-webResult.gs-result a.gs-title:active b, .gs-imageResult a.gs-title:active, .gs-imageResult a.gs-title:active b { color: rgb(17, 85, 204); }
+.gsc-cursor-page { color: rgb(17, 85, 204); }
+a.gsc-trailing-more-results:link { color: rgb(17, 85, 204); }
+.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType { color: rgb(51, 51, 51); }
+.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl { color: rgb(0, 153, 51); }
+.gs-webResult div.gs-visibleUrl-short { color: rgb(0, 153, 51); }
+.gs-webResult div.gs-visibleUrl-short { display: none; }
+.gs-webResult div.gs-visibleUrl-long { display: block; }
+.gs-promotion div.gs-visibleUrl-short { display: none; }
+.gs-promotion div.gs-visibleUrl-long { display: block; }
+.gsc-cursor-box { border-color: rgb(255, 255, 255); }
+.gsc-results .gsc-cursor-box .gsc-cursor-page { border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); color: rgb(17, 85, 204); }
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page { border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); color: rgb(17, 85, 204); }
+.gsc-webResult.gsc-result.gsc-promotion { border-color: rgb(246, 246, 246); background-color: rgb(246, 246, 246); }
+.gsc-completion-title { color: rgb(17, 85, 204); }
+.gsc-completion-snippet { color: rgb(51, 51, 51); }
+.gs-promotion a.gs-title:link, .gs-promotion a.gs-title:link *, .gs-promotion .gs-snippet a:link { color: rgb(17, 85, 204); }
+.gs-promotion a.gs-title:visited, .gs-promotion a.gs-title:visited *, .gs-promotion .gs-snippet a:visited { color: rgb(17, 85, 204); }
+.gs-promotion a.gs-title:hover, .gs-promotion a.gs-title:hover *, .gs-promotion .gs-snippet a:hover { color: rgb(17, 85, 204); }
+.gs-promotion a.gs-title:active, .gs-promotion a.gs-title:active *, .gs-promotion .gs-snippet a:active { color: rgb(17, 85, 204); }
+.gs-promotion .gs-snippet, .gs-promotion .gs-title .gs-promotion-title-right, .gs-promotion .gs-title .gs-promotion-title-right * { color: rgb(51, 51, 51); }
+.gs-promotion .gs-visibleUrl, .gs-promotion .gs-visibleUrl-short { color: rgb(0, 153, 51); }
+.gscb_a { display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 27px; line-height: 13px; font-family: arial, sans-serif; }
+.gsst_a .gscb_a { color: rgb(161, 185, 237); cursor: pointer; }
+.gsst_a:hover .gscb_a, .gsst_a:focus .gscb_a { color: rgb(51, 102, 204); }
+.gsst_a { display: inline-block; }
+.gsst_a { cursor: pointer; padding: 0px 4px; }
+.gsst_a:hover { text-decoration: none !important; }
+.gsst_b { font-size: 16px; padding: 0px 2px; position: relative; user-select: none; white-space: nowrap; }
+.gsst_e { opacity: 0.55; }
+.gsst_a:hover .gsst_e, .gsst_a:focus .gsst_e { opacity: 0.72; }
+.gsst_a:active .gsst_e { opacity: 1; }
+.gsst_f { background: white; text-align: left; }
+.gsst_g { background-color: white; border-width: 1px; border-style: solid; border-color: rgb(217, 217, 217) rgb(204, 204, 204) rgb(204, 204, 204); border-image: initial; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px; margin: -1px -3px; padding: 0px 6px; }
+.gsst_h { background-color: white; height: 1px; margin-bottom: -1px; position: relative; top: -1px; }
+.gsib_a { width: 100%; padding: 4px 6px 0px; }
+.gsib_a, .gsib_b { vertical-align: top; }
+.gssb_c { border: 0px; position: absolute; z-index: 989; }
+.gssb_e { border-width: 1px; border-style: solid; border-color: rgb(217, 217, 217) rgb(204, 204, 204) rgb(204, 204, 204); border-image: initial; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px; cursor: default; }
+.gssb_f { visibility: hidden; white-space: nowrap; }
+.gssb_k { border: 0px; display: block; position: absolute; top: 0px; z-index: 988; }
+.gsdd_a { border: none !important; }
+.gsq_a { padding: 0px; }
+.gscsep_a { display: none; }
+.gssb_a { padding: 0px 7px; }
+.gssb_a, .gssb_a td { white-space: nowrap; overflow: hidden; line-height: 22px; }
+#gssb_b { font-size: 11px; color: rgb(51, 102, 204); text-decoration: none; }
+#gssb_b:hover { font-size: 11px; color: rgb(51, 102, 204); text-decoration: underline; }
+.gssb_g { text-align: center; padding: 8px 0px 7px; position: relative; }
+.gssb_h { font-size: 15px; height: 28px; margin: 0.2em; -webkit-appearance: button; }
+.gssb_i { background: rgb(238, 238, 238); }
+.gss_ifl { visibility: hidden; padding-left: 5px; }
+.gssb_i .gss_ifl { visibility: visible; }
+a.gssb_j { font-size: 13px; color: rgb(51, 102, 204); text-decoration: none; line-height: 100%; }
+a.gssb_j:hover { text-decoration: underline; }
+.gssb_l { height: 1px; background-color: rgb(229, 229, 229); }
+.gssb_m { color: rgb(0, 0, 0); background: rgb(255, 255, 255); }
+.gsfe_a { border-width: 1px; border-style: solid; border-color: rgb(160, 160, 160) rgb(185, 185, 185) rgb(185, 185, 185); border-image: initial; box-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 2px inset; }
+.gsfe_b { border: 1px solid rgb(77, 144, 254); outline: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 2px inset; }
+.gssb_a { padding: 0px 9px; }
+.gsib_a { padding-right: 8px; padding-left: 8px; }
+.gsst_a { padding-top: 3px; }
+.gssb_e { border: 0px; }
+.gssb_l { margin: 5px 0px; }
+#gsc-i-id1::-webkit-input-placeholder { font-size: 14px; }
+#gsc-i-id1:focus::-webkit-input-placeholder { color: transparent; }
+.gssb_c .gsc-completion-container { position: static; }
+.gssb_c { z-index: 5000; }
+.gsc-completion-container table { background: transparent; font-size: inherit; font-family: inherit; }
+.gssb_c > tbody > tr, .gssb_c > tbody > tr > td, .gssb_d, .gssb_d > tbody > tr, .gssb_d > tbody > tr > td, .gssb_e, .gssb_e > tbody > tr, .gssb_e > tbody > tr > td { padding: 0px; margin: 0px; border: 0px; }
+.gssb_a table, .gssb_a table tr, .gssb_a table tr td { padding: 0px; margin: 0px; border: 0px; }</style>
+        </head>
+        <body>
+<div class="w3-container top">
+  <a class="w3schools-logo" href="//www.w3schools.com">w3schools<span class="dotcom">.com</span></a>
+  <div class="w3-right w3-hide-small w3-wide toptext">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+</div>
+
+<div style="display: none; position: fixed; z-index: 4; right: 52px; height: 44px; background-color: rgb(95, 95, 95); letter-spacing: normal; top: 0px;" id="googleSearch">
+  <div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" placeholder="Custom Search" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="https://www.google.com/uds/css/v2/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="search"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img src="https://www.google.com/cse/static/images/1x/googlelogo_grey_46x15dp.png" class="gsc-branding-img" srcset="https://www.google.com/cse/static/images/2x/googlelogo_grey_46x15dp.png 2x"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+</div>
+<div style="display: none; position: fixed; z-index: 3; right: 111px; height: 44px; background-color: rgb(95, 95, 95); text-align: right; padding-top: 9px; top: 0px;" id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr"><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div></div></div>
+
+<div class="w3-card-2 w3-slim topnav" id="topnav" style="position: fixed; top: 0px;">
+  <div style="overflow:auto;">
+    <ul class="w3-navbar w3-left" style="width:100%;overflow:hidden;height:44px">
+      <li><a href="javascript:void(0);" class="topnav-localicons w3-hide-large w3-left" onclick="open_menu()" title="Menu">☰</a></li>
+      <li><a href="/default.asp" class="topnav-icons fa fa-home w3-left" title="Home"></a></li>
+      <li><a href="/html/default.asp" title="HTML Tutorial">HTML</a></li>
+      <li><a href="/css/default.asp" title="CSS Tutorial">CSS</a></li>
+      <li><a href="/js/default.asp" title="JavaScript Tutorial">JAVASCRIPT</a></li>
+      <li><a href="/sql/default.asp" title="SQL Tutorial">SQL</a></li>
+      <li><a href="/php/default.asp" title="PHP Tutorial">PHP</a></li>
+      <li><a href="/bootstrap/default.asp" title="Bootstrap Tutorial">BOOTSTRAP</a></li>
+      <li><a href="/jquery/default.asp" title="jQuery Tutorial">JQUERY</a></li>
+      <li><a href="/angular/default.asp" title="Angular Tutorial">ANGULAR</a></li>
+      <li><a href="/w3css/default.asp" title="W3.CSS Tutorial">W3.CSS</a></li>
+      <li><a href="/xml/default.asp" title="XML Tutorial">XML</a></li>
+      <li><a id="topnavbtn_tutorials" href="javascript:void(0);" onclick="w3_open_nav(&quot;tutorials&quot;)" title="Tutorials">MORE <i class="fa fa-caret-down"></i></a></li>
+      <li class="w3-right"><a href="javascript:void(0);" class="topnav-icons fa w3-right" onclick="open_search(this)" title="Search W3Schools"></a></li>
+      <li class="w3-right"><a href="javascript:void(0);" class="topnav-icons fa w3-right" onclick="open_translate(this)" title="Translate W3Schools"></a></li>
+      <li class="w3-right"><a href="/forum/default.asp">FORUM</a></li>
+      <li class="w3-right"><a id="topnavbtn_examples" href="javascript:void(0);" onclick="w3_open_nav(&quot;examples&quot;)" title="Examples">EXAMPLES <i class="fa fa-caret-down"></i></a></li>
+      <li class="w3-right"><a id="topnavbtn_references" href="javascript:void(0);" onclick="w3_open_nav(&quot;references&quot;)" title="References">REFERENCES <i class="fa fa-caret-down"></i></a></li>
+    </ul>
+    <div id="nav_tutorials" class="w3-dropnav w3-card-2">
+      <span onclick="w3_close_nav(&quot;tutorials&quot;)" class="w3-closebtn w3-xlarge w3-hover-text-white" style="right:12px;">×</span>
+      <div class="w3-row-padding w3-padding-xxlarge">
+        <div class="w3-col l3 m6">
+          <h3>HTML and CSS</h3>
+          <a href="/html/default.asp">Learn HTML</a>
+          <a href="/css/default.asp">Learn CSS</a>
+          <a href="/w3css/default.asp">Learn W3.CSS</a>
+          <a href="/colors/default.asp">Learn Colors</a>
+          <a href="/bootstrap/default.asp">Learn Bootstrap</a>
+          <a href="/graphics/default.asp">Learn Graphics</a>
+          <a href="/icons/default.asp">Learn Icons</a>
+          <a href="/howto/default.asp">Learn How To</a>
+        </div>
+        <div class="w3-col l3 m6">  
+          <h3>JavaScript</h3>
+          <a href="/js/default.asp">Learn JavaScript</a>
+          <a href="/w3js/default.asp">Learn W3.JS</a>
+          <a href="/jquery/default.asp">Learn jQuery</a>
+          <a href="/jquerymobile/default.asp">Learn jQueryMobile</a>
+          <a href="/appml/default.asp">Learn AppML</a>
+          <a href="/angular/default.asp">Learn AngularJS</a>
+          <a href="/js/js_json_intro.asp">Learn JSON</a>
+          <a href="/js/js_ajax_intro.asp">Learn AJAX</a>
+          <div class="w3-hide-small"><br><br></div>
+        </div>
+        <div class="w3-col l3 m6">
+          <h3>Server Side</h3>
+          <a href="/sql/default.asp">Learn SQL</a>
+          <a href="/php/default.asp">Learn PHP</a>
+          <a href="/asp/default.asp">Learn ASP</a>
+          <h3>Web Building</h3>
+          <a href="/w3css/w3css_templates.asp">Web Templates</a>
+          <a href="/browsers/default.asp">Web Statistics</a>
+          <a href="/cert/default.asp">Web Certificates</a>
+        </div>
+        <div class="w3-col l3 m6">
+          <h3>XML</h3>
+          <a href="/xml/default.asp">Learn XML</a>
+          <a href="/xml/ajax_intro.asp">Learn XML AJAX</a>
+          <a href="/xml/dom_intro.asp">Learn XML DOM</a>
+          <a href="/xml/xml_dtd_intro.asp">Learn XML DTD</a>
+          <a href="/xml/schema_intro.asp">Learn XML Schema</a>
+          <a href="/xml/xsl_intro.asp">Learn XSLT</a>
+          <a href="/xml/xpath_intro.asp">Learn XPath</a>
+          <a href="/xml/xquery_intro.asp">Learn XQuery</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div id="nav_references" class="w3-dropnav w3-card-2">
+      <span onclick="w3_close_nav(&quot;references&quot;)" class="w3-closebtn w3-xlarge w3-hover-text-white" style="right:12px;">×</span>
+      <div class="w3-row-padding w3-padding-xxlarge">
+        <div class="w3-col m4">
+          <h3>HTML</h3>
+          <a href="/tags/default.asp">HTML Tag Reference</a>
+          <a href="/tags/ref_eventattributes.asp">HTML Event Reference</a>
+          <a href="/colors/default.asp">HTML Color Reference</a>
+          <a href="/tags/ref_attributes.asp">HTML Attribute Reference</a>
+          <a href="/tags/ref_canvas.asp">HTML Canvas Reference</a>
+          <a href="/graphics/svg_reference.asp">HTML SVG Reference</a>
+          <a href="/graphics/google_maps_reference.asp">Google Maps Reference</a>
+          <h3>CSS</h3>
+          <a href="/cssref/default.asp">CSS Reference</a>
+          <a href="/cssref/css_selectors.asp">CSS Selector Reference</a>
+          <a href="/w3css/w3css_references.asp">W3.CSS Reference</a>
+          <a href="/bootstrap/bootstrap_ref_all_classes.asp">Bootstrap Reference</a>
+          <a href="/icons/icons_reference.asp">Icon Reference</a>
+        </div>
+        <div class="w3-col m4">
+          <h3>JavaScript</h3>
+          <a href="/jsref/default.asp">JavaScript Reference</a>
+          <a href="/jsref/default.asp">HTML DOM Reference</a>
+          <a href="/w3js/w3js_references.asp">W3.JS Reference</a>
+          <a href="/jquery/jquery_ref_selectors.asp">jQuery Reference</a>
+          <a href="/jquerymobile/jquerymobile_ref_data.asp">jQuery Mobile Reference</a>
+          <a href="/angular/angular_ref_directives.asp">AngularJS Reference</a>
+          <h3>XML</h3>
+          <a href="/xml/dom_nodetype.asp">XML Reference</a>
+          <a href="/xml/dom_http.asp">XML Http Reference</a>
+          <a href="/xml/xsl_elementref.asp">XSLT Reference</a>
+          <a href="/xml/schema_elements_ref.asp">XML Schema Reference</a>
+        </div>
+        <div class="w3-col m4">
+          <h3>Charsets</h3>
+          <a href="/charsets/default.asp">HTML Character Sets</a>
+          <a href="/charsets/ref_html_ascii.asp">HTML ASCII</a>
+          <a href="/charsets/ref_html_ansi.asp">HTML ANSI</a>
+          <a href="/charsets/ref_html_ansi.asp">HTML Windows-1252</a>
+          <a href="/charsets/ref_html_8859.asp">HTML ISO-8859-1</a>
+          <a href="/charsets/ref_html_symbols.asp">HTML Symbols</a>
+          <a href="/charsets/ref_html_utf8.asp">HTML UTF-8</a>
+          <h3>Server Side</h3>
+          <a href="/php/php_ref_array.asp">PHP Reference</a>
+          <a href="/sql/sql_quickref.asp">SQL Reference</a>
+          <a href="/asp/asp_ref_response.asp">ASP Reference</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div id="nav_examples" class="w3-dropnav w3-card-2">
+      <span onclick="w3_close_nav(&quot;examples&quot;)" class="w3-closebtn w3-xlarge w3-hover-text-white" style="right:12px;">×</span>
+      <div class="w3-row-padding w3-padding-xxlarge">
+        <div class="w3-col l3 m6">
+          <h3>HTML/CSS</h3>
+          <a href="/html/html_examples.asp">HTML Examples</a>
+          <a href="/css/css_examples.asp">CSS Examples</a>
+          <a href="/w3css/w3css_examples.asp">W3.CSS Examples</a>
+          <a href="/w3css/w3css_templates.asp">W3.CSS Templates</a>
+          <a href="/bootstrap/bootstrap_examples.asp">Bootstrap Examples</a>
+        </div>
+        <div class="w3-col l3 m6">
+          <h3>JavaScript</h3>
+          <a href="/js/js_examples.asp" target="_top">JavaScript Examples</a>
+          <a href="/js/js_dom_examples.asp" target="_top">HTML DOM Examples</a>
+          <a href="/w3js/w3js_examples.asp">W3.JS Examples</a>
+          <a href="/jquery/jquery_examples.asp" target="_top">jQuery Examples</a>
+          <a href="/jquerymobile/jquerymobile_examples.asp" target="_top">jQuery Mobile Examples</a>
+          <a href="/angular/angular_examples.asp" target="_top">AngularJS Examples</a>
+          <a href="/js/js_ajax_examples.asp" target="_top">AJAX Examples</a>
+        </div>
+        <div class="w3-col l3 m6">
+          <h3>Server Side</h3>
+          <a href="/php/php_examples.asp" target="_top">PHP Examples</a>
+          <a href="/asp/asp_examples.asp" target="_top">ASP Examples</a>
+          <h3>XML</h3>
+          <a href="/xml/xml_examples.asp" target="_top">XML Examples</a>
+          <a href="/xml/xsl_examples.asp" target="_top">XSLT Examples</a>
+          <a href="/xml/xpath_examples.asp" target="_top">XPath Examples</a>
+          <a href="/xml/schema_example.asp" target="_top">XML Schema Examples</a>
+          <a href="/graphics/svg_examples.asp" target="_top">SVG Examples</a>
+        </div>
+        <div class="w3-col l3 m6">
+          <h3>Quizzes</h3>
+          <a href="/quiztest/quiztest.asp?Qtest=HTML" target="_top">HTML Quiz</a>
+          <a href="/quiztest/quiztest.asp?Qtest=CSS" target="_top">CSS Quiz</a>
+          <a href="/quiztest/quiztest.asp?Qtest=JavaScript" target="_top">JavaScript Quiz</a>
+          <a href="/quiztest/quiztest.asp?Qtest=Bootstrap" target="_top">Bootstrap Quiz</a>
+          <a href="/quiztest/quiztest.asp?Qtest=jQuery" target="_top">jQuery Quiz</a>
+          <a href="/quiztest/quiztest.asp?Qtest=PHP" target="_top">PHP Quiz</a>
+          <a href="/quiztest/quiztest.asp?Qtest=SQL" target="_top">SQL Quiz</a>
+          <a href="/quiztest/quiztest.asp?Qtest=XML" target="_top">XML Quiz</a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div class="w3-sidenav w3-collapse w3-slim" id="sidenav" style="top: 44px;">
+  <div id="leftmenuinner" style="padding-top: 44px;">
+    <div class="w3-light-grey" id="leftmenuinnerinner">
+      <a href="javascript:void(0)" onclick="close_menu()" class="w3-closebtn w3-hide-large w3-large" style="padding:3px 12px;">×</a>
+<h2 class="left"><span class="left_h2">CSS</span> Reference</h2>
+<a target="_top" href="default.asp">CSS Reference</a>
+<a target="_top" href="css_selectors.asp">CSS Selectors</a>
+<a target="_top" href="css_functions.asp">CSS Functions</a>
+<a target="_top" href="css_ref_aural.asp">CSS Reference Aural</a>
+<a target="_top" href="css_websafe_fonts.asp">CSS Web Safe Fonts</a>
+<a target="_top" href="css_animatable.asp">CSS Animatable</a>
+<a target="_top" href="css_units.asp">CSS Units</a>
+<a target="_top" href="css_pxtoemconversion.asp">CSS PX-EM Converter</a>
+<a target="_top" href="css_colors.asp">CSS Colors</a>
+<a target="_top" href="css_colors_legal.asp">CSS Color Values</a>
+<a target="_top" href="css_default_values.asp">CSS Default Values</a>
+<a target="_top" href="css3_browsersupport.asp">CSS3 Browser Support</a>
+<a target="_top" href="css_entities.asp">CSS Entities</a>
+<br>
+
+<div class="notranslate">
+
+<h2 class="left"><span class="left_h2">CSS</span> Properties</h2>
+<a target="_top" href="css3_pr_align-content.asp">align-content</a>
+<a target="_top" href="css3_pr_align-items.asp">align-items</a>
+<a target="_top" href="css3_pr_align-self.asp">align-self</a>
+<a target="_top" href="css3_pr_all.asp">all</a>
+<a target="_top" href="css3_pr_animation.asp">animation</a>
+<a target="_top" href="css3_pr_animation-delay.asp">animation-delay</a>
+<a target="_top" href="css3_pr_animation-direction.asp">animation-direction</a>
+<a target="_top" href="css3_pr_animation-duration.asp">animation-duration</a>
+<a target="_top" href="css3_pr_animation-fill-mode.asp">animation-fill-mode</a>
+<a target="_top" href="css3_pr_animation-iteration-count.asp">animation-iteration-count</a>
+<a target="_top" href="css3_pr_animation-name.asp">animation-name</a>
+<a target="_top" href="css3_pr_animation-play-state.asp">animation-play-state</a>
+<a target="_top" href="css3_pr_animation-timing-function.asp">animation-timing-function</a>
+
+<a target="_top" href="css3_pr_backface-visibility.asp">backface-visibility</a>
+<a target="_top" href="css3_pr_background.asp">background</a>
+<a target="_top" href="pr_background-attachment.asp">background-attachment</a>
+<a target="_top" href="pr_background-blend-mode.asp">background-blend-mode</a>
+<a target="_top" href="css3_pr_background-clip.asp">background-clip</a>
+<a target="_top" href="pr_background-color.asp">background-color</a>
+<a target="_top" href="pr_background-image.asp">background-image</a>
+<a target="_top" href="css3_pr_background-origin.asp">background-origin</a>
+<a target="_top" href="pr_background-position.asp">background-position</a>
+<a target="_top" href="pr_background-repeat.asp">background-repeat</a>
+<a target="_top" href="css3_pr_background-size.asp">background-size</a>  
+<a target="_top" href="pr_border.asp">border</a>
+<a target="_top" href="pr_border-bottom.asp">border-bottom</a>
+<a target="_top" href="pr_border-bottom_color.asp">border-bottom-color</a>
+<a target="_top" href="css3_pr_border-bottom-left-radius.asp">border-bottom-left-radius</a>
+<a target="_top" href="css3_pr_border-bottom-right-radius.asp">border-bottom-right-radius</a>  
+<a target="_top" href="pr_border-bottom_style.asp">border-bottom-style</a>
+<a target="_top" href="pr_border-bottom_width.asp">border-bottom-width</a>
+<a target="_top" href="pr_border-collapse.asp">border-collapse</a>
+<a target="_top" href="pr_border-color.asp">border-color</a>
+<a target="_top" href="css3_pr_border-image.asp">border-image</a>  
+<a target="_top" href="css3_pr_border-image-outset.asp">border-image-outset</a>  
+<a target="_top" href="css3_pr_border-image-repeat.asp">border-image-repeat</a> 
+<a target="_top" href="css3_pr_border-image-slice.asp">border-image-slice</a> 
+<a target="_top" href="css3_pr_border-image-source.asp">border-image-source</a> 
+<a target="_top" href="css3_pr_border-image-width.asp">border-image-width</a> 
+<a target="_top" href="pr_border-left.asp">border-left</a>
+<a target="_top" href="pr_border-left_color.asp">border-left-color</a>
+<a target="_top" href="pr_border-left_style.asp">border-left-style</a>
+<a target="_top" href="pr_border-left_width.asp">border-left-width</a>
+<a target="_top" href="css3_pr_border-radius.asp">border-radius</a> 
+<a target="_top" href="pr_border-right.asp">border-right</a>
+<a target="_top" href="pr_border-right_color.asp">border-right-color</a>
+<a target="_top" href="pr_border-right_style.asp">border-right-style</a>
+<a target="_top" href="pr_border-right_width.asp">border-right-width</a>
+<a target="_top" href="pr_border-spacing.asp">border-spacing</a>  
+<a target="_top" href="pr_border-style.asp">border-style</a>
+<a target="_top" href="pr_border-top.asp">border-top</a>
+<a target="_top" href="pr_border-top_color.asp">border-top-color</a>
+<a target="_top" href="css3_pr_border-top-left-radius.asp">border-top-left-radius</a> 
+<a target="_top" href="css3_pr_border-top-right-radius.asp">border-top-right-radius</a>
+<a target="_top" href="pr_border-top_style.asp">border-top-style</a>
+<a target="_top" href="pr_border-top_width.asp">border-top-width</a>
+<a target="_top" href="pr_border-width.asp">border-width</a>
+<a target="_top" href="pr_pos_bottom.asp">bottom</a>
+<a target="_top" href="css3_pr_box-shadow.asp">box-shadow</a> 
+<a target="_top" href="css3_pr_box-sizing.asp">box-sizing</a> 
+
+<a target="_top" href="pr_tab_caption-side.asp">caption-side</a>
+<a target="_top" href="pr_class_clear.asp">clear</a>
+<a target="_top" href="pr_pos_clip.asp">clip</a>
+<a target="_top" href="pr_text_color.asp">color</a>
+<a target="_top" href="css3_pr_column-count.asp">column-count</a>
+<a target="_top" href="css3_pr_column-fill.asp">column-fill</a>
+<a target="_top" href="css3_pr_column-gap.asp">column-gap</a>
+<a target="_top" href="css3_pr_column-rule.asp">column-rule</a>
+<a target="_top" href="css3_pr_column-rule-color.asp">column-rule-color</a>
+<a target="_top" href="css3_pr_column-rule-style.asp">column-rule-style</a>
+<a target="_top" href="css3_pr_column-rule-width.asp">column-rule-width</a>
+<a target="_top" href="css3_pr_column-span.asp">column-span</a>
+<a target="_top" href="css3_pr_column-width.asp">column-width</a>
+<a target="_top" href="css3_pr_columns.asp">columns</a>
+<a target="_top" href="pr_gen_content.asp">content</a>
+<a target="_top" href="pr_gen_counter-increment.asp">counter-increment</a>
+<a target="_top" href="pr_gen_counter-reset.asp">counter-reset</a>
+<a target="_top" href="pr_class_cursor.asp">cursor</a>
+
+<a target="_top" href="pr_text_direction.asp">direction</a>
+<a target="_top" href="pr_class_display.asp" class="active">display</a>
+<a target="_top" href="pr_tab_empty-cells.asp">empty-cells</a>
+<a target="_top" href="css3_pr_filter.asp">filter</a>
+<a target="_top" href="css3_pr_flex.asp">flex</a>
+<a target="_top" href="css3_pr_flex-basis.asp">flex-basis</a>
+<a target="_top" href="css3_pr_flex-direction.asp">flex-direction</a>
+<a target="_top" href="css3_pr_flex-flow.asp">flex-flow</a>
+<a target="_top" href="css3_pr_flex-grow.asp">flex-grow</a>
+<a target="_top" href="css3_pr_flex-shrink.asp">flex-shrink</a>
+<a target="_top" href="css3_pr_flex-wrap.asp">flex-wrap</a>
+<a target="_top" href="pr_class_float.asp">float</a>
+<a target="_top" href="pr_font_font.asp">font</a>
+<a target="_top" href="css3_pr_font-face_rule.asp">@font-face</a> 
+<a target="_top" href="pr_font_font-family.asp">font-family</a>
+<a target="_top" href="pr_font_font-size.asp">font-size</a>
+<a target="_top" href="css3_pr_font-size-adjust.asp">font-size-adjust</a>  
+<a target="_top" href="css3_pr_font-stretch.asp">font-stretch</a> 
+<a target="_top" href="pr_font_font-style.asp">font-style</a>
+<a target="_top" href="pr_font_font-variant.asp">font-variant</a>
+<a target="_top" href="pr_font_weight.asp">font-weight</a>
+<a target="_top" href="css3_pr_hanging-punctuation.asp">hanging-punctuation</a>
+<a target="_top" href="pr_dim_height.asp">height</a>
+<a target="_top" href="css3_pr_justify-content.asp">justify-content</a>
+<a target="_top" href="css3_pr_animation-keyframes.asp">@keyframes</a>
+<a target="_top" href="pr_pos_left.asp">left</a>
+<a target="_top" href="pr_text_letter-spacing.asp">letter-spacing</a>
+
+<a target="_top" href="pr_dim_line-height.asp">line-height</a>
+<a target="_top" href="pr_list-style.asp">list-style</a>
+<a target="_top" href="pr_list-style-image.asp">list-style-image</a>
+<a target="_top" href="pr_list-style-position.asp">list-style-position</a>
+<a target="_top" href="pr_list-style-type.asp">list-style-type</a>
+
+<a target="_top" href="pr_margin.asp">margin</a>
+<a target="_top" href="pr_margin-bottom.asp">margin-bottom</a>
+<a target="_top" href="pr_margin-left.asp">margin-left</a>
+<a target="_top" href="pr_margin-right.asp">margin-right</a>
+<a target="_top" href="pr_margin-top.asp">margin-top</a>
+<a target="_top" href="pr_dim_max-height.asp">max-height</a>
+<a target="_top" href="pr_dim_max-width.asp">max-width</a>
+<a target="_top" href="css3_pr_mediaquery.asp">@media</a>
+<a target="_top" href="pr_dim_min-height.asp">min-height</a>
+<a target="_top" href="pr_dim_min-width.asp">min-width</a>
+
+<a target="_top" href="css3_pr_nav-down.asp">nav-down</a>  
+<a target="_top" href="css3_pr_nav-index.asp">nav-index</a>  
+<a target="_top" href="css3_pr_nav-left.asp">nav-left</a>  
+<a target="_top" href="css3_pr_nav-right.asp">nav-right</a>  
+<a target="_top" href="css3_pr_nav-up.asp">nav-up</a>      
+
+<a target="_top" href="css3_pr_opacity.asp">opacity</a> 
+<a target="_top" href="css3_pr_order.asp">order</a> 
+<a target="_top" href="pr_outline.asp">outline</a>
+<a target="_top" href="pr_outline-color.asp">outline-color</a>
+<a target="_top" href="css3_pr_outline-offset.asp">outline-offset</a>  
+<a target="_top" href="pr_outline-style.asp">outline-style</a>
+<a target="_top" href="pr_outline-width.asp">outline-width</a>
+<a target="_top" href="pr_pos_overflow.asp">overflow</a>
+<a target="_top" href="css3_pr_overflow-x.asp">overflow-x</a>  
+<a target="_top" href="css3_pr_overflow-y.asp">overflow-y</a>
+
+<a target="_top" href="pr_padding.asp">padding</a>
+<a target="_top" href="pr_padding-bottom.asp">padding-bottom</a>
+<a target="_top" href="pr_padding-left.asp">padding-left</a>
+<a target="_top" href="pr_padding-right.asp">padding-right</a>
+<a target="_top" href="pr_padding-top.asp">padding-top</a>
+<a target="_top" href="pr_print_pageba.asp">page-break-after</a>
+<a target="_top" href="pr_print_pagebb.asp">page-break-before</a>
+<a target="_top" href="pr_print_pagebi.asp">page-break-inside</a>
+<a target="_top" href="css3_pr_perspective.asp">perspective</a>
+<a target="_top" href="css3_pr_perspective-origin.asp">perspective-origin</a>
+<a target="_top" href="pr_class_position.asp">position</a>
+<a target="_top" href="pr_gen_quotes.asp">quotes</a>
+
+<a target="_top" href="css3_pr_resize.asp">resize</a>
+<a target="_top" href="pr_pos_right.asp">right</a>
+
+<a target="_top" href="css3_pr_tab-size.asp">tab-size</a>
+<a target="_top" href="pr_tab_table-layout.asp">table-layout</a>
+<a target="_top" href="pr_text_text-align.asp">text-align</a>
+<a target="_top" href="css3_pr_text-align-last.asp">text-align-last</a>
+<a target="_top" href="pr_text_text-decoration.asp">text-decoration</a>
+<a target="_top" href="css3_pr_text-decoration-color.asp">text-decoration-color</a>
+<a target="_top" href="css3_pr_text-decoration-line.asp">text-decoration-line</a>
+<a target="_top" href="css3_pr_text-decoration-style.asp">text-decoration-style</a>
+<a target="_top" href="pr_text_text-indent.asp">text-indent</a>
+<a target="_top" href="css3_pr_text-justify.asp">text-justify</a>
+<a target="_top" href="css3_pr_text-overflow.asp">text-overflow</a>  
+<a target="_top" href="css3_pr_text-shadow.asp">text-shadow</a> 
+<a target="_top" href="pr_text_text-transform.asp">text-transform</a>
+<a target="_top" href="pr_pos_top.asp">top</a>
+
+<a target="_top" href="css3_pr_transform.asp">transform</a>
+<a target="_top" href="css3_pr_transform-origin.asp">transform-origin</a>
+<a target="_top" href="css3_pr_transform-style.asp">transform-style</a>
+<a target="_top" href="css3_pr_transition.asp">transition</a>
+<a target="_top" href="css3_pr_transition-delay.asp">transition-delay</a>
+<a target="_top" href="css3_pr_transition-duration.asp">transition-duration</a>
+<a target="_top" href="css3_pr_transition-property.asp">transition-property</a>
+<a target="_top" href="css3_pr_transition-timing-function.asp">transition-timing-function</a>
+
+<a target="_top" href="pr_text_unicode-bidi.asp">unicode-bidi</a> 
+<a target="_top" href="css3_pr_user-select.asp">user-select</a> 
+
+<a target="_top" href="pr_pos_vertical-align.asp">vertical-align</a>
+<a target="_top" href="pr_class_visibility.asp">visibility</a>
+
+<a target="_top" href="pr_text_white-space.asp">white-space</a>
+<a target="_top" href="pr_dim_width.asp">width</a>
+<a target="_top" href="css3_pr_word-break.asp">word-break</a>  
+<a target="_top" href="pr_text_word-spacing.asp">word-spacing</a>
+<a target="_top" href="css3_pr_word-wrap.asp">word-wrap</a>  
+
+<a target="_top" href="pr_pos_z-index.asp">z-index</a>
+<br>
+<br>
+
+</div>
+      <br><br>
+    </div>
+  </div>
+</div>
+<div class="w3-main w3-light-grey" id="belowtopnav" style="margin-left: 220px; padding-top: 44px;">
+  <div class="w3-row w3-white">
+    <div class="w3-col l10 m12" id="main">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <div id="mainLeaderboard" style="overflow:hidden;">
+          <!-- MainLeaderboard-->
+          <div id="div-gpt-ad-1422003450156-2" data-google-query-id="CLLUxpGJ-tICFZNIGAod3okDzQ" class="ezfound">
+            
+          <div id="google_ads_iframe_/16833175/MainLeaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/16833175/MainLeaderboard_0" title="3rd party ad content" name="google_ads_iframe_/16833175/MainLeaderboard_0" width="970" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+
+<h1>CSS <span class="color_h1">display</span> Property</h1>
+<div class="w3-clear w3-center nextprev">
+<a class="w3-left w3-btn" href="pr_text_direction.asp">❮<span class="w3-hide-small"> Previous</span></a>
+<a class="w3-btn" href="default.asp"><span class="w3-hide-small">Complete CSS </span>Reference</a>
+<a class="w3-right w3-btn" href="pr_tab_empty-cells.asp"><span class="w3-hide-small">Next </span>❯</a>
+</div>
+<br>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Display &lt;p&gt; elements as inline elements:</p>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+  
+    p.inline
+ <span style="color:black">{</span><span style="color:red"><br>
+ &nbsp;&nbsp;&nbsp;
+ display<span style="color:mediumblue"><span style="color:black">:</span> inline<span style="color:black">;</span></span><br>
+ </span><span style="color:black">}</span>
+  
+</span></div>
+<a target="_blank" href="tryit.asp?filename=trycss_display_inline" class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+</div>
+<p>More "Try it Yourself" examples below.</p>
+<hr>
+
+<h2>Definition and Usage</h2>
+<p>The display property specifies the type of box used for an HTML element.</p>
+<div class="w3-responsive">
+<table class="w3-table-all">
+  <tbody><tr>
+    <th style="width:25%">Default value:</th>
+    <td>inline</td>
+  </tr>
+  <tr>
+    <th>Inherited:</th>
+    <td>no</td>
+  </tr>
+  <tr>
+    <th>Animatable:</th>
+    <td>no. <a href="css_animatable.asp">Read about <em>animatable</em></a>
+  </td>
+  </tr>
+  <tr>
+    <th>Version:</th>
+    <td>CSS1</td>
+  </tr>
+  <tr>
+    <th>JavaScript syntax:</th>
+    <td>  <i>object</i>.style.display="none"
+<a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trycss_js_display">Try it</a>
+</td>
+  </tr>
+</tbody></table>
+</div>
+<hr>
+
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<div class="w3-responsive">
+<table class="browserref notranslate">
+  <tbody><tr>
+    <th style="width:20%;font-size:16px;text-align:left;">Property</th>
+    <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+    <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:16%;" class="bsSafari" title="Safari"></th>
+    <th style="width:16%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left; width: 20%;">display</td>
+    <td>4.0</td>
+    <td>8.0<br><span class="deprecated">Partial from 5.5</span></td> 
+    <td>3.0</td>
+    <td>3.1</td>
+    <td>7.0</td>
+  </tr>
+</tbody></table>
+</div>
+<p><b>Note:</b> The values "inline-table", "table", "table-caption", 
+"table-cell", "table-column", "table-column-group", "table-row", 
+and "table-row-group" are not supported in IE7 and earlier. IE8 
+requires a !DOCTYPE. IE9 supports the values.</p>
+<p><strong>Note:</strong> The values "flex" and "inline-flex" requires a prefix 
+to work in Safari. For "flex" use "display: -webkit-flex", for "inline-flex" use 
+"display: -webkit-inline-flex;".</p>
+<hr>
+
+<h2>CSS Syntax</h2>
+<div class="w3-code w3-border notranslate"><div>
+display: <i>value</i>;</div></div>
+
+<h2>Property Values</h2>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tbody><tr>
+    <th style="width:22%">Value</th>
+    <th style="width:68%">Description</th>
+    <th style="width:10%">Play it</th>    
+  </tr>
+    <tr>
+    <td>inline</td>
+    <td>Default value. Displays an element as an inline element (like &lt;span&gt;)</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_display&amp;preval=inline">Play it »</a></td>          
+    </tr>
+  <tr>
+    <td>block</td>
+    <td>Displays an element as a block element (like &lt;p&gt;)</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_display&amp;preval=block">Play it »</a></td>    
+    </tr>
+  <tr>
+    <td>flex</td>
+    <td>Displays an element as an block-level flex container. New in CSS3</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>inline-block</td>
+    <td>Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>inline-flex</td>
+    <td>Displays an element as an inline-level flex container. New in CSS3</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>inline-table</td>
+    <td>The element is displayed as an inline-level table</td>
+  <td>&nbsp;</td>     
+    </tr>
+  <tr>
+    <td>list-item</td>
+    <td>Let the element behave like a &lt;li&gt; element</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_display&amp;preval=list-item">Play it »</a></td>     
+    </tr>
+  <tr>
+    <td>run-in</td>
+    <td>Displays an element as either block or inline, depending on context </td>
+  <td>&nbsp;</td>    
+  </tr>
+    <tr>
+    <td>table</td>
+    <td>Let the element behave like a &lt;table&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>table-caption</td>
+    <td>Let the element behave like a &lt;caption&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>
+      table-column-group</td>
+    <td>Let the element behave like a &lt;colgroup&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>table-header-group</td>
+    <td>Let the element behave like a &lt;thead&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>table-footer-group</td>
+    <td>Let the element behave like a &lt;tfoot&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>table-row-group</td>
+    <td>Let the element behave like a &lt;tbody&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>table-cell</td>
+    <td>Let the element behave like a &lt;td&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>table-column</td>
+    <td>Let the element behave like a &lt;col&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>table-row</td>
+    <td>Let the element behave like a &lt;tr&gt; element</td>
+  <td></td>
+    </tr>
+  <tr>
+    <td>none</td>
+    <td>The element will not be displayed at all (has no effect on layout)</td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_display&amp;preval=none">Play it »</a></td>    
+  </tr>
+  <tr>
+    <td>initial</td>
+    <td>Sets this property to its default value. <a href="css_initial.asp">Read about <em>initial</em></a></td>
+  <td><a target="_blank" class="w3-btn btnplayit" href="playit.asp?filename=playcss_display&amp;preval=initial">Play it »</a></td>    
+    </tr>
+  <tr>
+    <td>inherit</td>
+    <td>Inherits this property from its parent element. <a href="css_inherit.asp">Read about <em>inherit</em></a></td>
+  <td></td>
+    </tr>
+  </tbody></table>
+</div>
+<hr>
+
+<h2>More Examples</h2>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>A demonstration of how to use the inherit property value:</p>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+    body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; display<span style="color:mediumblue"><span style="color:black">:</span> inline<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; display<span style="color:mediumblue"><span style="color:black">:</span> inherit<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_display_inline2">Try it Yourself »</a>
+</div>
+<br>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Set the direction of some flexible items inside a &lt;div&gt; element in reverse 
+order:</p>
+<div class="w3-code notranslate cssHigh"><span style="color:brown">
+    div <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; display<span style="color:mediumblue"><span style="color:black">:</span> -webkit-flex<span style="color:black">;</span></span> <span style="color:green">/* Safari */</span><br>&nbsp;&nbsp;&nbsp; -webkit-flex-direction<span style="color:mediumblue"><span style="color:black">:</span> row-reverse<span style="color:black">;</span></span> <span style="color:green">/* Safari 6.1+ */</span><br>&nbsp;&nbsp;&nbsp; display<span style="color:mediumblue"><span style="color:black">:</span> flex<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; flex-direction<span style="color:mediumblue"><span style="color:black">:</span> row-reverse<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss3_flex-direction">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Related Pages</h2>
+<p>CSS tutorial: <a href="/css/css_display_visibility.asp">CSS Display and 
+visibility</a></p>
+<p>HTML DOM reference: <a href="/jsref/prop_style_display.asp">display property</a></p>
+<hr>
+
+<div class="w3-clear w3-center nextprev">
+<a class="w3-left w3-btn" href="pr_text_direction.asp">❮<span class="w3-hide-small"> Previous</span></a>
+<a class="w3-btn" href="default.asp"><span class="w3-hide-small">Complete CSS </span>Reference</a>
+<a class="w3-right w3-btn" href="pr_tab_empty-cells.asp"><span class="w3-hide-small">Next </span>❯</a>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<!-- Ezoic - WideSkyScraper - sidebar -->
+<div id="ezoic-pub-ad-placeholder-104">
+  <div class="sidesection">
+    <div id="skyscraper">
+      <div id="div-gpt-ad-1422003450156-5" data-google-query-id="CPPA0ZGJ-tICFRBbGAod_94P8A" class="ezfound">
+         
+      <div id="google_ads_iframe_/16833175/WideSkyScraper_0__container__" style="border: 0pt none; display: inline-block; width: 160px; height: 600px;"><iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-6/html/container.html" id="google_ads_iframe_/16833175/WideSkyScraper_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="160" height="600" data-is-safeframe="true" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+    </div>
+  </div>
+</div>
+<!-- End Ezoic - WideSkyScraper - sidebar -->
+
+<div class="sidesection">
+<h4><a href="/colors/colors_picker.asp">COLOR PICKER</a></h4>
+<a href="/colors/colors_picker.asp">
+<img src="/images/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h4><a href="/howto/default.asp">LEARN MORE</a></h4>
+<p>
+<a href="/howto/howto_js_tabs.asp">Tabs</a><br>
+<a href="/howto/howto_css_dropdown.asp">Dropdowns</a><br>
+<a href="/howto/howto_js_accordion.asp">Accordions</a><br>
+<a href="/howto/howto_js_weight_converter.asp">Convert Weights</a><br>
+<a href="/howto/howto_css_animate_buttons.asp">Animated Buttons</a><br>
+<a href="/howto/howto_js_sidenav.asp">Side Navigation</a><br>
+<a href="/howto/howto_js_topnav.asp">Top Navigation</a><br>
+<a href="/howto/howto_js_animate.asp">JS Animations</a><br>
+<a href="/howto/howto_css_modals.asp">Modal Boxes</a><br>
+<a href="/howto/howto_js_progressbar.asp">Progress Bars</a><br>
+<a href="/howto/howto_css_parallax.asp">Parallax</a><br>
+<a href="/howto/howto_css_login_form.asp">Login Form</a><br>
+<a href="/howto/howto_html_include.asp">HTML Includes</a><br>
+<a href="/howto/howto_google_maps.asp">Google Maps</a><br>
+<a href="/howto/howto_css_loader.asp">Loaders</a><br>
+<a href="/howto/howto_css_tooltip.asp">Tooltips</a><br>
+<a href="/howto/howto_js_slideshow.asp">Slideshow</a><br>
+<a href="/howto/howto_js_filter_lists.asp">Filter List</a><br>
+<a href="/howto/howto_js_sort_list.asp">Sort List</a><br>
+</p>
+</div>
+
+<div class="sidesection">
+<h4>SHARE</h4>
+<div class="w3-text-grey sharethis">
+<a href="http://www.facebook.com/sharer.php?u=https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a><a href="https://twitter.com/home?status=Currently reading https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a><a href="https://plus.google.com/share?url=https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>
+<br><br>
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe" class="w3-modal">
+<div class="w3-modal-content w3-padding-64 w3-animate-zoom" id="popupDIV"></div>
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h4><a target="_blank" href="//www.w3schools.com/cert/default.asp">CERTIFICATES</a></h4>
+<p>HTML, CSS, JavaScript, PHP, jQuery, Bootstrap and XML.</p>
+<a target="_blank" href="//www.w3schools.com/cert/default.asp" class="w3-btn w3-dark-grey">
+Read More »</a>
+</div>
+  <div id="stickypos" class="sidesection" style="text-align:center;">
+    <div id="stickyadcontainer" style="width: 287.016px;">
+
+<!-- Ezoic - StickySkyScraper - sidebar -->
+<div id="ezoic-pub-ad-placeholder-105">
+      <div style="position:relative;margin:auto;">
+        <div id="div-gpt-ad-1472547360578-0" data-google-query-id="CJvZx5GJ-tICFVJNGAod0UAL3w" class="ezfound">
+          
+        <div id="google_ads_iframe_/16833175/StickySkyScraper_0__container__" style="border: 0pt none; display: inline-block; width: 160px; height: 600px;"><iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-6/html/container.html" id="google_ads_iframe_/16833175/StickySkyScraper_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="160" height="600" data-is-safeframe="true" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+      </div>
+</div>
+<!-- End Ezoic - StickySkyScraper - sidebar -->
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+<div id="footer" class="footer w3-container w3-white">
+
+<hr>
+<div style="overflow:auto">
+  <!-- Ezoic - BottomMediumRectangle - bottom_of_page -->
+  <div id="ezoic-pub-ad-placeholder-106">
+    <!-- BottomMediumRectangle -->
+    <div class="bottomad ezfound" id="div-gpt-ad-1422003450156-0" data-google-query-id="CMW_55GJ-tICFVibGAodtfoBiQ">
+      
+    <div id="google_ads_iframe_/16833175/BottomMediumRectangle_0__container__" style="border: 0pt none; display: inline-block; width: 970px; height: 250px;"><iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-6/html/container.html" id="google_ads_iframe_/16833175/BottomMediumRectangle_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="250" data-is-safeframe="true" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+  </div>
+  <!-- End Ezoic - BottomMediumRectangle - bottom_of_page -->
+  <!-- Ezoic - RightBottomMediumRectangle - bottom_of_page -->
+  <div id="ezoic-pub-ad-placeholder-107">
+    <!-- RightBottomMediumRectangle -->
+    <div class="bottomad ezfound" id="div-gpt-ad-1422003450156-3" data-google-query-id="COOI8pGJ-tICFQ8YGAodoDoHdQ">
+      
+    <div id="google_ads_iframe_/16833175/RightBottomMediumRectangle_0__container__" style="border: 0pt none; display: inline-block; width: 336px; height: 280px;"><iframe frameborder="0" src="https://tpc.googlesyndication.com/safeframe/1-0-6/html/container.html" id="google_ads_iframe_/16833175/RightBottomMediumRectangle_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="336" height="280" data-is-safeframe="true" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+  </div>
+  <!-- End Ezoic - RightBottomMediumRectangle - bottom_of_page -->
+</div>
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="/forum/default.asp" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="/about/default.asp" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+
+
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="/html/default.asp">HTML Tutorial</a><br>
+<a href="/css/default.asp">CSS Tutorial</a><br>
+<a href="/js/default.asp">JavaScript Tutorial</a><br>
+<a href="/w3css/default.asp">W3.CSS Tutorial</a><br>
+<a href="/bootstrap/default.asp">Bootstrap Tutorial</a><br>
+<a href="/sql/default.asp">SQL Tutorial</a><br>
+<a href="/php/default.asp">PHP Tutorial</a><br>
+<a href="/jquery/default.asp">jQuery Tutorial</a><br>
+<a href="/angular/default.asp">Angular Tutorial</a><br>
+<a href="/xml/default.asp">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="/tags/default.asp">HTML Reference</a><br>
+<a href="/cssref/default.asp">CSS Reference</a><br>
+<a href="/jsref/default.asp">JavaScript Reference</a><br>
+<a href="/w3css/w3css_references.asp">W3.CSS Reference</a><br>
+<a href="/browsers/default.asp">Browser Statistics</a><br>
+<a href="/php/php_ref_array.asp">PHP Reference</a><br>
+<a href="/colors/colors_names.asp">HTML Colors</a><br>
+<a href="/charsets/default.asp">HTML Character Sets</a><br>
+<a href="/jquery/jquery_ref_selectors.asp">jQuery Reference</a><br>
+<a href="/angular/angular_ref_directives.asp">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="/html/html_examples.asp">HTML Examples</a><br>
+<a href="/css/css_examples.asp">CSS Examples</a><br>
+<a href="/js/js_examples.asp">JavaScript Examples</a><br>
+<a href="/w3css/w3css_examples.asp">W3.CSS Examples</a><br>
+<a href="/js/js_dom_examples.asp">HTML DOM Examples</a><br>
+<a href="/php/php_examples.asp">PHP Examples</a><br>
+<a href="/asp/asp_examples.asp">ASP Examples</a><br>
+<a href="/jquery/jquery_examples.asp">jQuery Examples</a><br>
+<a href="/angular/angular_examples.asp">Angular Examples</a><br>
+<a href="/xml/xml_examples.asp">XML Examples</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="/cert/default.asp">HTML Certificate</a><br>
+<a href="/cert/default.asp">CSS Certificate</a><br>
+<a href="/cert/default.asp">JavaScript Certificate</a><br>
+<a href="/cert/default.asp">jQuery Certificate</a><br>
+<a href="/cert/default.asp">PHP Certificate</a><br>
+<a href="/cert/default.asp">Bootstrap Certificate</a><br>
+<a href="/cert/default.asp">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="/about/about_copyright.asp">terms of use</a>,
+<a href="/about/about_privacy.asp">cookie and privacy policy</a>.
+<a href="/about/about_copyright.asp">Copyright 1999-2017</a> by Refsnes Data. All Rights Reserved.<br>
+ <a href="//www.w3schools.com/w3css/">Powered by W3.CSS</a>.<br><br>
+<a href="//www.w3schools.com">
+<img style="width:150px;height:28px;border:0" src="/images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+
+</div>
+
+
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 1003px; height: 263px; display: none;"></iframe><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><iframe id="google_osd_static_frame_4013566748377" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body>
+        </html>
