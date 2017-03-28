@@ -7,7 +7,6 @@
                     cssRules.push(rule.cssText);
         RemoveElements(document.querySelectorAll("script"));
         RemoveElements(document.querySelectorAll(`*[style*="display:none"]`));
-        RemoveElements(document.querySelectorAll(`*[style*="display:none"]`));
         var body = document.body.innerHTML;
         return ComposeTemplate({
             body,
